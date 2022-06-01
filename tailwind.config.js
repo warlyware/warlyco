@@ -27,7 +27,13 @@ module.exports = {
         500: "#65add7",
       },
     },
-    extend: {},
+    extend: {
+      fontSize: {
+        "7xl": "7rem",
+        "8xl": "10rem",
+        "9xl": "18rem",
+      },
+    },
   },
   plugins: [],
 };
