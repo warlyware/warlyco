@@ -128,7 +128,7 @@ export default function Home() {
         </div>
       </a>
       <a
-        href="//warly.space"
+        href="http://warly.space"
         target="_blank"
         className="absolute flex flex-col justify-center left-0 h-screen border border-purple-700 hover:bg-gradient-to-b hover:from-pink-500 hover:to-yellow-500"
         rel="noreferrer"
