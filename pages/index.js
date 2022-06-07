@@ -118,7 +118,7 @@ export default function Home() {
         />
       </div>
       <a
-        href="https://warly.art"
+        href="//warly.art"
         target="_blank"
         className="absolute top-0 w-full text-center border border-purple-700 hover:bg-gradient-to-l hover:from-cyan-500 hover:to-pink-500"
         rel="noreferrer"
@@ -128,7 +128,7 @@ export default function Home() {
         </div>
       </a>
       <a
-        href="https://warly.space"
+        href="//warly.space"
         target="_blank"
         className="absolute flex flex-col justify-center left-0 h-screen border border-purple-700 hover:bg-gradient-to-b hover:from-pink-500 hover:to-yellow-500"
         rel="noreferrer"
@@ -138,7 +138,7 @@ export default function Home() {
         </div>
       </a>
       <a
-        href="https://twitter.com/warly_sol"
+        href="//twitter.com/warly_sol"
         target="_blank"
         className="absolute flex flex-col justify-center right-0 h-screen border border-purple-700 hover:bg-gradient-to-t hover:from-orange-500 hover:to-cyan-500"
         rel="noreferrer"
@@ -148,7 +148,7 @@ export default function Home() {
         </div>
       </a>
       <a
-        href="https://warlyware.com"
+        href="//warlyware.com"
         target="_blank"
         className="absolute flex flex-col justify-center bottom-0 w-full text-center border border-purple-700 hover:bg-gradient-to-r hover:from-yellow-500 hover:to-orange-500"
         rel="noreferrer"
