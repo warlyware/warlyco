@@ -118,23 +118,23 @@ export default function Home() {
         />
       </div>
       <a
-        href="//warly.art"
+        href="//warlyware.com"
         target="_blank"
         className="absolute top-0 w-full text-center border border-purple-700 hover:bg-gradient-to-l hover:from-cyan-500 hover:to-pink-500"
         rel="noreferrer"
       >
         <div className="text-4xl font-bold uppercase  opacity-85 tracking-widest leading-8 rotate-180">
-          art
+          warlyware
         </div>
       </a>
       <a
-        href="http://warly.space"
+        href="http://solanastake.house"
         target="_blank"
         className="absolute flex flex-col justify-center left-0 h-screen border border-purple-700 hover:bg-gradient-to-b hover:from-pink-500 hover:to-yellow-500"
         rel="noreferrer"
       >
         <div className="w-full text-4xl font-bold uppercase opacity-85 tracking-widest left-is-bottom-text leading-8">
-          space
+          stakeh◎use
         </div>
       </a>
       <a
@@ -154,7 +154,7 @@ export default function Home() {
         rel="noreferrer"
       >
         <div className="text-4xl font-bold uppercase opacity-85 tracking-widest leading-8 ">
-          <span>warlyware</span>
+          <span>space</span>
         </div>
       </a>
       {/* <div className="title text-yellow-500 absolute top-0 left-4">W</div>
