@@ -28,56 +28,56 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Image
-        src="/images/warlyfox.png"
-        alt="Vercel Logo"
-        width={800}
-        height={800}
-      />
-      <div className="absolute h-screen w-screen top-0 bottom-0 right-0 left-0 overflow-hidden">
-        <div className="text-7xl md:text-9xl flex w-full justify-center h-1/3">
-          <div className="relative w-1/3 flex justify-center items-center">
+      {/* <div className="-ml-[800px] -mb-[6px]">
+        <Image
+          src="/images/warlyfox-w.png"
+          alt="Logo"
+          width={450}
+          height={450}
+        />
+      </div> */}
+      <div className="absolute h-screen w-screen top-0 bottom-0 right-0 left-0 overflow-hidden px-32">
+        <div className="text-7xl md:text-[420px] flex w-full justify-center h-1/3 mt-[100px]">
+          <div className="relative w-1/5 flex justify-center items-center mr-[35px]">
             <div className="absolute -mt-3 -ml-4 text-yellow-500">W</div>
             <div className="absolute mt-3 ml-4 text-pink-400">W</div>
             <div className="absolute">W</div>
           </div>
-          <div className="relative w-1/3 flex justify-center items-center">
+          <div className="relative w-1/5 flex justify-center items-center">
             <div className="absolute -mt-3 -ml-4 text-yellow-500">A</div>
             <div className="absolute mt-3 ml-4 text-pink-400">A</div>
             <div className="absolute">A</div>
           </div>
-          <div className="relative w-1/3 flex justify-center items-center">
+          <div className="relative w-1/5 flex justify-center items-center">
             <div className="absolute -mt-3 -ml-4 text-yellow-500">R</div>
             <div className="absolute mt-3 ml-4 text-pink-400">R</div>
             <div className="absolute">R</div>
           </div>
-        </div>
-        <div className="text-7xl md:text-9xl flex w-full justify-around h-1/3 px-32">
-          <div className="relative w-1/2 flex justify-center items-center">
+          <div className="relative w-1/5 flex justify-center items-center">
             <div className="absolute -mt-3 -ml-4 text-yellow-500">L</div>
             <div className="absolute mt-3 ml-4 text-pink-400">L</div>
             <div className="absolute">L</div>
           </div>
-          <div className="relative w-1/2 flex justify-center items-center">
+          <div className="relative w-1/5 flex justify-center items-center -ml-[75px]">
             <div className="absolute -mt-3 -ml-4 text-yellow-500">Y</div>
             <div className="absolute mt-3 ml-4 text-pink-400">Y</div>
             <div className="absolute">Y</div>
           </div>
         </div>
-        <div className="text-7xl md:text-9xl flex w-full justify-between h-1/3">
-          <div className="relative w-1/3 flex justify-center items-center">
+        <div className="text-7xl md:text-[10em] flex w-full justify-end h-1/3 -mt-[30px] pr-[40px] space-x-[40px]">
+          <div className="relative w-1/12 flex justify-center items-center">
             <div className="absolute -mt-3 -ml-4 text-yellow-500">C</div>
             <div className="absolute mt-3 ml-4 text-pink-400">C</div>
             <div className="absolute">C</div>
           </div>
-          <div className="relative w-1/3 flex justify-center items-center">
+          <div className="relative w-1/12 flex justify-center items-center">
             <div className="absolute -mt-3 -ml-4 text-yellow-500">O</div>
             <div className="absolute mt-3 ml-4 text-pink-400">O</div>
             <div className="absolute">O</div>
           </div>
         </div>
       </div>
-      <div className="absolute -top-[5px] left-[1px] z-10 animate-pulse rotate-180">
+      {/* <div className="absolute -top-[5px] left-[1px] z-10 animate-pulse rotate-180">
         <Image
           src="/images/pentagram.png"
           alt="Vercel Logo"
@@ -156,7 +156,7 @@ export default function Home() {
         <div className="text-4xl font-bold uppercase opacity-85 tracking-widest leading-8 ">
           <span>space</span>
         </div>
-      </a>
+      </a> */}
       {/* <div className="title text-yellow-500 absolute top-0 left-4">W</div>
       <div className="title text-yellow-500 absolute top-0">A</div>
       <div className="title text-yellow-500 absolute top-0 right-4">R</div>
