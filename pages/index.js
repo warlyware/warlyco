@@ -52,7 +52,7 @@ export default function Home() {
             <div className="absolute">R</div>
           </div>
         </div>
-        <div className="text-7xl md:text-9xl flex w-full justify-around h-1/3 px-32">
+        <div className="text-7xl md:text-9xl flex w-full justify-around h-1/3 px-32 -mt-2">
           <div className="relative w-1/2 flex justify-center items-center">
             <div className="absolute -mt-3 -ml-4 text-yellow-500">L</div>
             <div className="absolute mt-3 ml-4 text-pink-400">L</div>
@@ -64,7 +64,7 @@ export default function Home() {
             <div className="absolute">Y</div>
           </div>
         </div>
-        <div className="text-7xl md:text-9xl flex w-full justify-between h-1/3">
+        <div className="text-7xl md:text-9xl flex w-full justify-between h-1/3 -mt-2">
           <div className="relative w-1/3 flex justify-center items-center">
             <div className="absolute -mt-3 -ml-4 text-yellow-500">C</div>
             <div className="absolute mt-3 ml-4 text-pink-400">C</div>
