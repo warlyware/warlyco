@@ -29,7 +29,7 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <Image
-        src="/images/warlyfox.png"
+        src="/images/warlyfox-w.png"
         alt="Vercel Logo"
         width={800}
         height={800}
@@ -81,82 +81,66 @@ export default function Home() {
         <Image
           src="/images/pentagram.png"
           alt="Vercel Logo"
-          width={32}
-          height={32}
+          width={40}
+          height={40}
         />
       </div>
       <div className="absolute -top-[5px] right-[1px] z-10 animate-pulse rotate-180">
         <Image
           src="/images/pentagram.png"
           alt="Vercel Logo"
-          width={32}
-          height={32}
+          width={40}
+          height={40}
         />
       </div>
       <div className="absolute -bottom-[5px] right-[1px] z-10 animate-pulse">
         <Image
           src="/images/pentagram.png"
           alt="Vercel Logo"
-          width={32}
-          height={32}
+          width={40}
+          height={40}
         />
       </div>
       <div className="absolute -bottom-[5px] left-[1px] z-10 animate-pulse">
         <Image
           src="/images/pentagram.png"
           alt="Vercel Logo"
-          width={32}
-          height={32}
-        />
-      </div>
-      <div className="absolute -bottom-[5px] left-[1px] z-10 animate-pulse">
-        <Image
-          src="/images/pentagram.png"
-          alt="Vercel Logo"
-          width={32}
-          height={32}
+          width={40}
+          height={40}
         />
       </div>
       <a
-        href="//warlyware.com"
+        href="//twitter.com/warlyco"
         target="_blank"
         className="absolute top-0 w-full text-center border border-purple-700 hover:bg-gradient-to-l hover:from-cyan-500 hover:to-pink-500"
         rel="noreferrer"
       >
-        <div className="text-4xl font-bold uppercase  opacity-85 tracking-widest leading-8 rotate-180">
-          warlyware
-        </div>
-      </a>
-      <a
-        href="http://solanastake.house"
-        target="_blank"
-        className="absolute flex flex-col justify-center left-0 h-screen border border-purple-700 hover:bg-gradient-to-b hover:from-pink-500 hover:to-yellow-500"
-        rel="noreferrer"
-      >
-        <div className="w-full text-4xl font-bold uppercase opacity-85 tracking-widest left-is-bottom-text leading-8">
-          stakeh◎use
-        </div>
-      </a>
-      <a
-        href="//twitter.com/warly_sol"
-        target="_blank"
-        className="absolute flex flex-col justify-center right-0 h-screen border border-purple-700 hover:bg-gradient-to-t hover:from-orange-500 hover:to-cyan-500"
-        rel="noreferrer"
-      >
-        <div className="text-4xl font-bold uppercase opacity-85 tracking-widest right-is-bottom-text leading-8 rotate-180">
+        <div className="text-4xl font-bold uppercase opacity-85 tracking-widest leading-8 rotate-180 py-1">
           twitter
         </div>
       </a>
       <a
-        href="//warlyware.com"
+        href="http://raids.warly.co"
         target="_blank"
-        className="absolute flex flex-col justify-center bottom-0 w-full text-center border border-purple-700 hover:bg-gradient-to-r hover:from-yellow-500 hover:to-orange-500"
+        className="absolute flex flex-col justify-center left-0 h-screen border border-purple-700 hover:bg-gradient-to-b hover:from-pink-500 hover:to-yellow-500"
         rel="noreferrer"
       >
-        <div className="text-4xl font-bold uppercase opacity-85 tracking-widest leading-8 ">
-          <span>space</span>
+        <div className="w-full text-4xl font-bold uppercase opacity-85 tracking-widest left-is-bottom-text leading-8 px-1">
+          raids
         </div>
       </a>
+      <a
+        href="//naming.warly.co"
+        target="_blank"
+        className="absolute flex flex-col justify-center right-0 h-screen border border-purple-700 hover:bg-gradient-to-t hover:from-orange-500 hover:to-cyan-500"
+        rel="noreferrer"
+      >
+        <div className="text-4xl font-bold uppercase opacity-85 tracking-widest right-is-bottom-text leading-8 rotate-180 px-1">
+          domain names
+        </div>
+      </a>
+      {/* marquee? */}
+      <div className="absolute flex flex-col justify-center bottom-0 w-full text-center border border-purple-700 hover:bg-gradient-to-r h-[42px]"></div>
       {/* <div className="title text-yellow-500 absolute top-0 left-4">W</div>
       <div className="title text-yellow-500 absolute top-0">A</div>
       <div className="title text-yellow-500 absolute top-0 right-4">R</div>
