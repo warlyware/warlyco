@@ -130,13 +130,13 @@ export default function Home() {
         </div>
       </a>
       <a
-        href="//naming.warly.co"
+        href="#"
         target="_blank"
         className="absolute flex flex-col justify-center right-0 h-screen border border-purple-700 hover:bg-gradient-to-t hover:from-orange-500 hover:to-cyan-500"
         rel="noreferrer"
       >
         <div className="text-4xl font-bold uppercase opacity-85 tracking-widest right-is-bottom-text leading-8 rotate-180 px-1">
-          domain names
+          domain names (coming soon)
         </div>
       </a>
       {/* marquee? */}
