@@ -136,7 +136,7 @@ export default function Home() {
         rel="noreferrer"
       >
         <div className="text-4xl font-bold uppercase opacity-85 tracking-widest right-is-bottom-text leading-8 rotate-180 px-1">
-          domain names (coming soon)
+          WNS (coming soon)
         </div>
       </a>
       {/* marquee? */}
