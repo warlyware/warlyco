@@ -1,6 +1,6 @@
 import axios from "axios";
+import constants from "constants/constants";
 
-const ENV_URL = process.env.ENV_URL || "http://localhost:3000";
 const SPECIAL_CASE_COLLECTIONS = [
   "blocksmith_labs", // Blocksmith Labs
 ];
