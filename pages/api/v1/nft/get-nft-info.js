@@ -31,7 +31,7 @@ const handler = async (req, res) => {
       `${ENV_URL}/api/v1/nft/get-magic-eden-data?mintAddress=${mintAddress}`
     );
     combindedData.magicEden = magicEden;
-    console.log("magicEden", magicEden);
+    // console.log("magicEden", magicEden);
   } catch (error) {
     console.error("error", error);
   }
@@ -47,12 +47,16 @@ const handler = async (req, res) => {
       const { items } = data.result.data;
       const howRare = items?.find((nft) => nft.mint === mintAddress);
       combindedData.howRare = howRare;
-      // console.log("howRare", howRare);
+      console.log("howRare", howRare);
     } catch (error) {
       console.error("error", error);
     }
 
-    if (combindedData.howRare) return;
+    if (combindedData.howRare) {
+      res.status(200).json(combindedData);
+      return;
+    }
+
     try {
       const { data: dataFromSymbol } = await axios.get(
         `https://api.howrare.is/v0.1/collections/${combindedData.metaplex.json.symbol}`
@@ -63,8 +67,8 @@ const handler = async (req, res) => {
     } catch (error) {
       console.error("error", error);
     }
+    res.status(200).json(combindedData);
   }
-  res.status(200).json(combindedData);
 };
 
 export default handler;
