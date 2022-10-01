@@ -1,6 +1,18 @@
 import axios from "axios";
 
 const ENV_URL = process.env.ENV_URL || "http://localhost:3000";
+const SPECIAL_CASE_COLLECTIONS = [
+  "blocksmith_labs", // Blocksmith Labs
+];
+
+const getHowRareCollectionName = (collection) => {
+  switch (collection) {
+    case "blocksmith_labs":
+      return "blocksmithlabs";
+    default:
+      return collection;
+  }
+};
 
 const modelHowRare = ({
   rank,
@@ -8,12 +20,22 @@ const modelHowRare = ({
   rank_algo: rankAlgorithm,
   link,
   attributes: howRareAttributes,
+  collectionName,
 }) => ({
   rank,
   attributes,
   rankAlgorithm,
   link,
   attributes: howRareAttributes,
+  collectionName,
+});
+
+const buildNftLinks = (mintAddress) => ({
+  opensea: `https://opensea.io/assets/solana/${mintAddress}`,
+  rarible: `https://rarible.com/token/solana/${mintAddress}`,
+  magicEden: `https://magic.eden/asset/${mintAddress}`,
+  howRare: `https://howrare.is/nft/${mintAddress}`,
+  moonrank: `https://moonrank.app/${mintAddress}`,
 });
 
 const modelNftData = ({ metaplex, moonrank, howRare, magicEden }) => {
@@ -91,6 +113,7 @@ const modelNftData = ({ metaplex, moonrank, howRare, magicEden }) => {
     activities,
     mint,
     edition,
+    links: buildNftLinks(mint.address, howRare),
   };
 };
 
@@ -128,19 +151,29 @@ const handler = async (req, res) => {
   const { collection } = combindedData.magicEden;
 
   if (collection) {
+    let howRareCollectionName = collection;
+    if (SPECIAL_CASE_COLLECTIONS.includes(collection)) {
+      howRareCollectionName = getHowRareCollectionName(collection);
+    }
     try {
       const { data } = await axios.get(
-        `https://api.howrare.is/v0.1/collections/${collection}`
+        `https://api.howrare.is/v0.1/collections/${howRareCollectionName}`
       );
 
+      if (!data?.result?.data) {
+        throw new Error("No result");
+      }
       const { items } = data.result.data;
       const howRare = items?.find((nft) => nft.mint === mintAddress);
       combindedData.howRare = howRare;
+      combindedData.howRare.collectionName = howRareCollectionName;
     } catch (error) {
+      howRareCollectionName = null;
       console.error("error", error);
     }
 
     if (!combindedData.howRare) {
+      howRareCollectionName = combindedData.metaplex?.json?.symbol;
       try {
         const { data: dataFromSymbol } = await axios.get(
           `https://api.howrare.is/v0.1/collections/${combindedData.metaplex?.json?.symbol}`
@@ -148,11 +181,15 @@ const handler = async (req, res) => {
         const { items } = dataFromSymbol.result.data;
         const howRare = items?.find((nft) => nft.mint === mintAddress);
         combindedData.howRare = howRare;
+        combindedData.howRare.collectionName = howRareCollectionName;
       } catch (error) {
+        howRareCollectionName = null;
         console.error("error", error);
       }
     }
   }
+
+  console.log("raw howRare", combindedData.howRare);
 
   const modeledData = modelNftData(combindedData);
 
