@@ -2,7 +2,7 @@ import axios from "axios";
 import { Connection, PublicKey } from "@solana/web3.js";
 import { Metaplex, Nft } from "@metaplex-foundation/js";
 
-const ENV_URL = process.env.ENV_URL || "http://localhost:3000";
+// const ENV_URL = process.env.ENV_URL || "https://warly.co";
 
 const handler = async (req, res) => {
   const { mintAddress } = req.query;
@@ -11,7 +11,7 @@ const handler = async (req, res) => {
     const combindedData = {};
     try {
       const { data: moonrank } = await axios.get(
-        `${ENV_URL}/api/v1/nft/get-moonrank-data?mintAddress=${mintAddress}`
+        `https://warly.co/api/v1/nft/get-moonrank-data?mintAddress=${mintAddress}`
       );
       combindedData.moonrank = moonrank;
     } catch (error) {
@@ -19,7 +19,7 @@ const handler = async (req, res) => {
     }
     try {
       const { data: metaplex } = await axios.get(
-        `${ENV_URL}/api/v1/nft/get-metaplex-data?mintAddress=${mintAddress}`
+        `https://warly.co/api/v1/nft/get-metaplex-data?mintAddress=${mintAddress}`
       );
       combindedData.metaplex = metaplex;
     } catch (error) {
@@ -27,7 +27,7 @@ const handler = async (req, res) => {
     }
     try {
       const { data: magicEden } = await axios.get(
-        `${ENV_URL}/api/v1/nft/get-magic-eden-data?mintAddress=${mintAddress}`
+        `https://warly.co/api/v1/nft/get-magic-eden-data?mintAddress=${mintAddress}`
       );
       combindedData.magicEden = magicEden;
     } catch (error) {
