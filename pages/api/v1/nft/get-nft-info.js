@@ -30,12 +30,20 @@ const modelHowRare = ({
   collectionName,
 });
 
-const buildNftLinks = (mintAddress) => ({
+const buildNftLinks = ({ mintAddress, howRare }) => ({
   opensea: `https://opensea.io/assets/solana/${mintAddress}`,
   rarible: `https://rarible.com/token/solana/${mintAddress}`,
-  magicEden: `https://magic.eden/asset/${mintAddress}`,
-  howRare: `https://howrare.is/nft/${mintAddress}`,
+  magicEden: `https://magiceden.io/item-details/${mintAddress}`,
+  hyperspace: `https://https://hyperspace.xyz/token/${mintAddress}`,
+  yawww: `https://www.yawww.io/marketplace/listing/${mintAddress}`,
+  howRare: howRare?.collectionName
+    ? `https://howrare.is/nft/${howRare.collectionName}/${mintAddress}`
+    : null,
   moonrank: `https://moonrank.app/${mintAddress}`,
+  coralCube: `https://coralcube.io/detail/${mintAddress}`,
+  solanart: `https://solanart.io/nft/${mintAddress}`,
+  explorer: `https://explorer.solana.com/address/${mintAddress}`,
+  solscan: `https://solscan.io/token/${mintAddress}`,
 });
 
 const modelNftData = ({ metaplex, moonrank, howRare, magicEden }) => {
@@ -113,7 +121,7 @@ const modelNftData = ({ metaplex, moonrank, howRare, magicEden }) => {
     activities,
     mint,
     edition,
-    links: buildNftLinks(mint.address, howRare),
+    links: buildNftLinks({ mintAddress: mint.address, howRare }),
   };
 };
 
@@ -188,8 +196,6 @@ const handler = async (req, res) => {
       }
     }
   }
-
-  console.log("raw howRare", combindedData.howRare);
 
   const modeledData = modelNftData(combindedData);
 
