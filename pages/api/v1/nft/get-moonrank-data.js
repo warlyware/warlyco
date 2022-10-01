@@ -12,7 +12,7 @@ const handler = async (req, res) => {
     const { title, rank } = scraped.data;
     const returnObj = {
       title,
-      rank: rank.replaceAll("⍜", ""),
+      rank: rank.replaceAll(/\D/g, ""),
     };
     return res.status(200).send(returnObj);
   } catch (error) {

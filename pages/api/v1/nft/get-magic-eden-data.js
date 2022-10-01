@@ -8,7 +8,15 @@ const handler = async (req, res) => {
       `https://api-mainnet.magiceden.dev/v2/tokens/${mintAddress}`
     );
 
-    res.status(200).json(data);
+    const { data: listings } = await axios.get(
+      `https://api-mainnet.magiceden.dev/v2/tokens/${mintAddress}/activities`
+    );
+
+    const { data: activities } = await axios.get(
+      `https://api-mainnet.magiceden.dev/v2/tokens/${mintAddress}/activities`
+    );
+
+    res.status(200).json({ listings, activities, ...data });
   } catch (error) {
     console.log("error", error);
   }

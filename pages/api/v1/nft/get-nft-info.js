@@ -1,8 +1,98 @@
 import axios from "axios";
-import { Connection, PublicKey } from "@solana/web3.js";
-import { Metaplex, Nft } from "@metaplex-foundation/js";
 
 const ENV_URL = process.env.ENV_URL || "http://localhost:3000";
+
+const modelHowRare = ({
+  rank,
+  attributes,
+  rank_algo: rankAlgorithm,
+  link,
+  attributes: howRareAttributes,
+}) => ({
+  rank,
+  attributes,
+  rankAlgorithm,
+  link,
+  attributes: howRareAttributes,
+});
+
+const modelNftData = ({ metaplex, moonrank, howRare, magicEden }) => {
+  const {
+    name,
+    symbol,
+    descrption,
+    seller_fee_basis_points: sellerFeeBasisPoint,
+    external_url: externalUrl,
+    attributes,
+    collection,
+    properties,
+    image,
+  } = metaplex.json;
+  const {
+    uri,
+    isMutable,
+    primarySaleHappened,
+    editionNonce,
+    creators,
+    tokenStandard,
+    collection: collectionMeta,
+    collectionDetails,
+    uses,
+    metadataAddress,
+    mint,
+    edition,
+    updateAuthorityAddress,
+  } = metaplex;
+  const {
+    owner: ownerAddress,
+    supply,
+    collection: magicEdenCollectionName,
+    listings,
+    activities,
+  } = magicEden;
+  return {
+    metadataAddress,
+    ownerAddress,
+    mintAddres: mint.address,
+    rank: {
+      moonrank: Number(moonrank?.rank) ? Number(moonrank.rank) : null,
+      howRare: howRare?.rank,
+      howRareDetailed: howRare ? modelHowRare(howRare) : null,
+      traitNormalized: howRare ? howRare.all_ranks.trait_normalized : null,
+      statisticalRarity: howRare ? howRare.all_ranks.statistical_rarity : null,
+    },
+    updateAuthorityAddress,
+    name,
+    attributes: attributes.map(({ trait_type, value }) => ({
+      traitType: trait_type,
+      value,
+    })),
+    supply,
+    symbol,
+    descrption,
+    sellerFeeBasisPoint,
+    externalUrl,
+    collection: {
+      ...collectionMeta,
+      collectionDetails,
+      magicEdenCollectionName,
+      ...collection,
+    },
+    properties,
+    image,
+    uri,
+    isMutable,
+    primarySaleHappened,
+    editionNonce,
+    creators,
+    tokenStandard,
+    uses,
+    listings,
+    activities,
+    mint,
+    edition,
+  };
+};
 
 const handler = async (req, res) => {
   const { mintAddress } = req.query;
@@ -31,7 +121,6 @@ const handler = async (req, res) => {
       `${ENV_URL}/api/v1/nft/get-magic-eden-data?mintAddress=${mintAddress}`
     );
     combindedData.magicEden = magicEden;
-    // console.log("magicEden", magicEden);
   } catch (error) {
     console.error("error", error);
   }
@@ -47,28 +136,27 @@ const handler = async (req, res) => {
       const { items } = data.result.data;
       const howRare = items?.find((nft) => nft.mint === mintAddress);
       combindedData.howRare = howRare;
-      console.log("howRare", howRare);
     } catch (error) {
       console.error("error", error);
     }
 
-    if (combindedData.howRare) {
-      res.status(200).json(combindedData);
-      return;
+    if (!combindedData.howRare) {
+      try {
+        const { data: dataFromSymbol } = await axios.get(
+          `https://api.howrare.is/v0.1/collections/${combindedData.metaplex?.json?.symbol}`
+        );
+        const { items } = dataFromSymbol.result.data;
+        const howRare = items?.find((nft) => nft.mint === mintAddress);
+        combindedData.howRare = howRare;
+      } catch (error) {
+        console.error("error", error);
+      }
     }
-
-    try {
-      const { data: dataFromSymbol } = await axios.get(
-        `https://api.howrare.is/v0.1/collections/${combindedData.metaplex.json.symbol}`
-      );
-      const { items } = dataFromSymbol.result.data;
-      const howRare = items?.find((nft) => nft.mint === mintAddress);
-      combindedData.howRare = howRare;
-    } catch (error) {
-      console.error("error", error);
-    }
-    res.status(200).json(combindedData);
   }
+
+  const modeledData = modelNftData(combindedData);
+
+  res.status(200).json(modeledData);
 };
 
 export default handler;
