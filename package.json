@@ -9,9 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@metaplex-foundation/js": "^0.16.0",
+    "@solana/spl-token": "^0.3.5",
+    "@solana/web3.js": "^1.63.1",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.3",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "scrape-it": "^5.3.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
