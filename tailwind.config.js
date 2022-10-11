@@ -12,7 +12,7 @@ module.exports = {
         ...colors.pink,
         200: "#fba1a0",
       },
-      purple: { ...colors.purple, 700: "#2e004a" },
+      purple: { ...colors.purple, 700: "#2e004a", 800: "#21162b" },
       yellow: {
         ...colors.yellow,
         500: "#fedf35",

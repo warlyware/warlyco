@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-end bg-cyan-200 max-h-screen min-h-screen relative text-purple-700 overflow-hidden">
+    <div className="flex justify-center items-end bg-black max-h-screen min-h-screen relative text-black overflow-hidden">
       <Head>
         <title>warlyco</title>
         <link
@@ -39,41 +39,51 @@ export default function Home() {
       <div className="absolute h-screen w-screen top-0 bottom-0 right-0 left-0 overflow-hidden px-32">
         <div className="text-7xl md:text-[420px] flex w-full justify-center h-1/3 mt-[100px]">
           <div className="relative w-1/5 flex justify-center items-center mr-[35px]">
-            <div className="absolute -mt-3 -ml-4 text-yellow-500">W</div>
-            <div className="absolute mt-3 ml-4 text-pink-400">W</div>
+            <div className="absolute -mt-3 -ml-4 text-blue-200">W</div>
+            <div className="absolute mt-3 ml-4 text-cyan-500">W</div>
             <div className="absolute">W</div>
           </div>
           <div className="relative w-1/5 flex justify-center items-center">
-            <div className="absolute -mt-3 -ml-4 text-yellow-500">A</div>
-            <div className="absolute mt-3 ml-4 text-pink-400">A</div>
-            <div className="absolute">A</div>
+            <div className="absolute -mt-3 -ml-4 text-blue-200">E</div>
+            <div className="absolute mt-3 ml-4 text-cyan-500">E</div>
+            <div className="absolute">E</div>
           </div>
           <div className="relative w-1/5 flex justify-center items-center">
-            <div className="absolute -mt-3 -ml-4 text-yellow-500">R</div>
-            <div className="absolute mt-3 ml-4 text-pink-400">R</div>
-            <div className="absolute">R</div>
+            <div className="absolute -mt-3 -ml-4 text-blue-200">B</div>
+            <div className="absolute mt-3 ml-4 text-cyan-500">B</div>
+            <div className="absolute">B</div>
           </div>
           <div className="relative w-1/5 flex justify-center items-center">
-            <div className="absolute -mt-3 -ml-4 text-yellow-500">L</div>
-            <div className="absolute mt-3 ml-4 text-pink-400">L</div>
-            <div className="absolute">L</div>
-          </div>
-          <div className="relative w-1/5 flex justify-center items-center -ml-[75px]">
-            <div className="absolute -mt-3 -ml-4 text-yellow-500">Y</div>
-            <div className="absolute mt-3 ml-4 text-pink-400">Y</div>
-            <div className="absolute">Y</div>
+            <div className="absolute -mt-3 -ml-4 text-blue-200">3</div>
+            <div className="absolute mt-3 ml-4 text-cyan-500">3</div>
+            <div className="absolute">3</div>
           </div>
         </div>
-        <div className="text-7xl md:text-[10em] flex w-full justify-end h-1/3 -mt-[30px] pr-[40px] space-x-[40px]">
-          <div className="relative w-1/12 flex justify-center items-center">
-            <div className="absolute -mt-3 -ml-4 text-yellow-500">C</div>
-            <div className="absolute mt-3 ml-4 text-pink-400">C</div>
-            <div className="absolute">C</div>
+        <div className="text-7xl md:text-[10em] flex w-full justify-end h-1/3 -mt-[30px] -ml-[115px] space-x-[-38px]">
+          <div className="relative w-1/5 flex justify-center items-center">
+            <div className="absolute -mt-3 -ml-4 text-blue-200">T</div>
+            <div className="absolute mt-3 ml-4 text-cyan-500">T</div>
+            <div className="absolute">T</div>
           </div>
-          <div className="relative w-1/12 flex justify-center items-center">
-            <div className="absolute -mt-3 -ml-4 text-yellow-500">O</div>
-            <div className="absolute mt-3 ml-4 text-pink-400">O</div>
+          <div className="relative w-1/5 flex justify-center items-center">
+            <div className="absolute -mt-3 -ml-4 text-blue-200">O</div>
+            <div className="absolute mt-3 ml-4 text-cyan-500">O</div>
             <div className="absolute">O</div>
+          </div>
+          <div className="relative w-1/5 flex justify-center items-center">
+            <div className="absolute -mt-3 -ml-4 text-blue-200">O</div>
+            <div className="absolute mt-3 ml-4 text-cyan-500">O</div>
+            <div className="absolute">O</div>
+          </div>
+          <div className="relative w-1/5 flex justify-center items-center">
+            <div className="absolute -mt-3 -ml-4 text-blue-200">L</div>
+            <div className="absolute mt-3 ml-4 text-cyan-500">L</div>
+            <div className="absolute">L</div>
+          </div>
+          <div className="relative w-1/5 flex justify-center items-center">
+            <div className="absolute -mt-3 -ml-4 text-blue-200">S</div>
+            <div className="absolute mt-3 ml-4 text-cyan-500">S</div>
+            <div className="absolute">S</div>
           </div>
         </div>
       </div>
