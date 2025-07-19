@@ -1,22 +1,21 @@
 'use client';
 
 import Head from "next/head";
+import dynamic from 'next/dynamic';
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Portfolio from "../../components/portfolio";
 import Link from "next/link";
 
+const MonkeImage = dynamic(() => import('../../components/monke-image'), {
+  ssr: false,
+});
+
 export default function Home() {
   const pathname = usePathname();
   const router = useRouter();
   const [showPortfolio, setShowPortfolio] = useState(false);
-
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   useEffect(() => {
     setShowPortfolio(pathname === '/portfolio');
@@ -50,19 +49,9 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Image
-        src="/images/smb3-9677-transparent.png"
-        alt="SMB3 #9677"
-        width={800}
-        height={800}
-        className={`
-        transition-all duration-1000
-        ${mounted
-            ? 'opacity-100 translate-y-0 animate-slide-up'
-            : 'opacity-0 translate-y-full pointer-events-none'}
-      `}
-        style={{ animationDelay: mounted ? '0.3s' : '0s' }}
-      />
+
+      <MonkeImage />
+
       <div className="absolute h-screen w-screen top-0 bottom-0 right-0 left-0 overflow-hidden">
         <div className="text-6xl md:text-8xl lg:text-9xl flex w-full justify-center h-1/3">
           <div className="relative w-1/3 flex justify-center items-center">
