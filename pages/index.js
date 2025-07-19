@@ -29,13 +29,14 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <Image
-        src="/images/warlyfox-w.png"
-        alt="Vercel Logo"
+        src="/images/smb3-9677-transparent.png"
+        alt="SMB3 #9677"
         width={800}
         height={800}
+        className="animate-slide-up"
       />
       <div className="absolute h-screen w-screen top-0 bottom-0 right-0 left-0 overflow-hidden">
-        <div className="text-7xl md:text-9xl flex w-full justify-center h-1/3">
+        <div className="text-6xl md:text-8xl lg:text-9xl flex w-full justify-center h-1/3">
           <div className="relative w-1/3 flex justify-center items-center">
             <div className="absolute -mt-3 -ml-4 text-yellow-500">W</div>
             <div className="absolute mt-3 ml-4 text-pink-400">W</div>
@@ -52,7 +53,7 @@ export default function Home() {
             <div className="absolute">R</div>
           </div>
         </div>
-        <div className="text-7xl md:text-9xl flex w-full justify-around h-1/3 px-32 -mt-2">
+        <div className="text-6xl md:text-8xl lg:text-9xl flex w-full justify-around h-1/3 px-32 -mt-2">
           <div className="relative w-1/2 flex justify-center items-center">
             <div className="absolute -mt-3 -ml-4 text-yellow-500">L</div>
             <div className="absolute mt-3 ml-4 text-pink-400">L</div>
@@ -64,7 +65,7 @@ export default function Home() {
             <div className="absolute">Y</div>
           </div>
         </div>
-        <div className="text-7xl md:text-9xl flex w-full justify-between h-1/3 -mt-2">
+        {/* <div className="text-7xl md:text-9xl flex w-full justify-between h-1/3 -mt-2">
           <div className="relative w-1/3 flex justify-center items-center">
             <div className="absolute -mt-3 -ml-4 text-yellow-500">C</div>
             <div className="absolute mt-3 ml-4 text-pink-400">C</div>
@@ -75,72 +76,83 @@ export default function Home() {
             <div className="absolute mt-3 ml-4 text-pink-400">O</div>
             <div className="absolute">O</div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="absolute -top-[5px] left-[1px] z-10 animate-pulse rotate-180">
         <Image
-          src="/images/pentagram.png"
-          alt="Vercel Logo"
+          src="/images/smb3-9677-transparent.png"
+          alt="#9677"
           width={40}
           height={40}
         />
       </div>
       <div className="absolute -top-[5px] right-[1px] z-10 animate-pulse rotate-180">
         <Image
-          src="/images/pentagram.png"
-          alt="Vercel Logo"
+          src="/images/smb3-9677-transparent.png"
+          alt="#9677"
           width={40}
           height={40}
         />
       </div>
       <div className="absolute -bottom-[5px] right-[1px] z-10 animate-pulse">
         <Image
-          src="/images/pentagram.png"
-          alt="Vercel Logo"
+          src="/images/smb3-9677-transparent.png"
+          alt="#9677"
           width={40}
           height={40}
         />
       </div>
       <div className="absolute -bottom-[5px] left-[1px] z-10 animate-pulse">
         <Image
-          src="/images/pentagram.png"
-          alt="Vercel Logo"
+          src="/images/smb3-9677-transparent.png"
+          alt="#9677"
           width={40}
           height={40}
         />
       </div>
-      <a
-        href="//twitter.com/warlyco"
-        target="_blank"
+      <div
         className="absolute top-0 w-full text-center border border-purple-700 hover:bg-gradient-to-l hover:from-cyan-500 hover:to-pink-500"
-        rel="noreferrer"
       >
-        <div className="text-4xl font-bold uppercase opacity-85 tracking-widest leading-8 rotate-180 py-1">
-          twitter
-        </div>
-      </a>
-      <a
-        href="http://raids.warly.co"
-        target="_blank"
+        <div className="text-4xl font-bold uppercase opacity-85 tracking-widest leading-8 rotate-180 py-1 h-[40px]" />
+      </div>
+      <div
         className="absolute flex flex-col justify-center left-0 h-screen border border-purple-700 hover:bg-gradient-to-b hover:from-pink-500 hover:to-yellow-500"
-        rel="noreferrer"
       >
-        <div className="w-full text-4xl font-bold uppercase opacity-85 tracking-widest left-is-bottom-text leading-8 px-1">
-          raids
-        </div>
-      </a>
-      <a
-        href="//naming.warly.co"
-        target="_blank"
+        <div className="text-4xl font-bold uppercase opacity-85 tracking-widest left-is-bottom-text leading-8 px-1 w-[40px]" />
+      </div>
+      <div
         className="absolute flex flex-col justify-center right-0 h-screen border border-purple-700 hover:bg-gradient-to-t hover:from-orange-500 hover:to-cyan-500"
-        rel="noreferrer"
       >
-        <div className="text-4xl font-bold uppercase opacity-85 tracking-widest right-is-bottom-text leading-8 rotate-180 px-1">
-          domain names
+        <div className="text-4xl font-bold uppercase opacity-85 tracking-widest right-is-bottom-text leading-8 rotate-180 px-1 w-[40px]" />
+      </div>
+      <div className="absolute flex flex-col justify-center bottom-0 w-full text-center border border-purple-700 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-pink-500 h-[40px]">
+        <div className="text-sm md:text-3xl font-bold uppercase opacity-85 tracking-widest leading-8 py-1 h-[40px] space-x-4 md:space-x-16">
+          <a
+            href="https://github.com/warlyware"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:underline"
+          >
+            github
+          </a>
+          <a
+            href="/resume"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:underline"
+          >
+            resume
+          </a>
+          <a
+            href="https://x.com/warly_sol"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:underline"
+          >
+            twitter
+          </a>
         </div>
-      </a>
-      {/* marquee? */}
-      <div className="absolute flex flex-col justify-center bottom-0 w-full text-center border border-purple-700 hover:bg-gradient-to-r h-[42px]"></div>
+      </div>
       {/* <div className="title text-yellow-500 absolute top-0 left-4">W</div>
       <div className="title text-yellow-500 absolute top-0">A</div>
       <div className="title text-yellow-500 absolute top-0 right-4">R</div>
@@ -158,7 +170,7 @@ export default function Home() {
           <div>co</div>
         </div>
       </div> */}
-      <style jsx>{`
+      <style>{`
         html,
         body {
           max-height: 100vh;
@@ -175,6 +187,19 @@ export default function Home() {
           writing-mode: vertical-rl;
           text-orientation: mixed;
           translate: ;
+        }
+        .animate-slide-up {
+          transform: translateY(100vh);
+          animation: slideUp 1.5s ease-out forwards;
+          animation-delay: 0.3s;
+        }
+        @keyframes slideUp {
+          from {
+            transform: translateY(100vh);
+          }
+          to {
+            transform: translateY(0);
+          }
         }
       `}</style>
     </div>
