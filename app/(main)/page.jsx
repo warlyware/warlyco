@@ -12,15 +12,16 @@ export default function Home() {
   const router = useRouter();
   const [showPortfolio, setShowPortfolio] = useState(false);
 
-  // Sync state with URL
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   useEffect(() => {
     setShowPortfolio(pathname === '/portfolio');
   }, [pathname]);
 
-  // To open Portfolio
-  const openPortfolio = () => router.push('/portfolio');
-
-  // To close Portfolio
   const closePortfolio = () => router.push('/');
 
   return (
@@ -54,8 +55,13 @@ export default function Home() {
         alt="SMB3 #9677"
         width={800}
         height={800}
-        className="animate-slide-up"
-        style={{ animationDelay: '0.3s' }}
+        className={`
+        transition-all duration-1000
+        ${mounted
+            ? 'opacity-100 translate-y-0 animate-slide-up'
+            : 'opacity-0 translate-y-full pointer-events-none'}
+      `}
+        style={{ animationDelay: mounted ? '0.3s' : '0s' }}
       />
       <div className="absolute h-screen w-screen top-0 bottom-0 right-0 left-0 overflow-hidden">
         <div className="text-6xl md:text-8xl lg:text-9xl flex w-full justify-center h-1/3">
