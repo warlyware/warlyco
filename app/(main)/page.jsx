@@ -1,10 +1,27 @@
+'use client';
+
 import Head from "next/head";
 import Image from "next/image";
-import { useState } from "react";
-import Portfolio from "../components/portfolio";
+import { useEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import Portfolio from "../../components/portfolio";
+import Link from "next/link";
 
 export default function Home() {
+  const pathname = usePathname();
+  const router = useRouter();
   const [showPortfolio, setShowPortfolio] = useState(false);
+
+  // Sync state with URL
+  useEffect(() => {
+    setShowPortfolio(pathname === '/portfolio');
+  }, [pathname]);
+
+  // To open Portfolio
+  const openPortfolio = () => router.push('/portfolio');
+
+  // To close Portfolio
+  const closePortfolio = () => router.push('/');
 
   return (
     <div className="flex justify-center items-end bg-cyan-200 max-h-screen min-h-screen relative text-purple-700 overflow-hidden">
@@ -71,7 +88,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="absolute -top-[5px] left-[1px] z-10 animate-pulse rotate-180">
+      <div className="absolute top-[2px] left-[1px] z-10 animate-pulse rotate-180">
         <Image
           src="/images/smb3-9677-transparent.png"
           alt="#9677"
@@ -79,7 +96,7 @@ export default function Home() {
           height={40}
         />
       </div>
-      <div className="absolute -top-[5px] right-[1px] z-10 animate-pulse rotate-180">
+      <div className="absolute top-[2px] right-[1px] z-10 animate-pulse rotate-180">
         <Image
           src="/images/smb3-9677-transparent.png"
           alt="#9677"
@@ -87,7 +104,7 @@ export default function Home() {
           height={40}
         />
       </div>
-      <div className="absolute -bottom-[5px] right-[1px] z-10 animate-pulse">
+      <div className="absolute bottom-[2px] right-[1px] z-10 animate-pulse">
         <Image
           src="/images/smb3-9677-transparent.png"
           alt="#9677"
@@ -95,7 +112,7 @@ export default function Home() {
           height={40}
         />
       </div>
-      <div className="absolute -bottom-[5px] left-[1px] z-10 animate-pulse">
+      <div className="absolute bottom-[2px] left-[1px] z-10 animate-pulse">
         <Image
           src="/images/smb3-9677-transparent.png"
           alt="#9677"
@@ -136,14 +153,12 @@ export default function Home() {
           >
             resume
           </a>
-          <button
+          <Link
             className="hover:underline uppercase"
-            onClick={() => {
-              setShowPortfolio(true);
-            }}
+            href="/portfolio"
           >
             portfolio
-          </button>
+          </Link>
           <a
             href="https://x.com/warly_sol"
             target="_blank"
@@ -156,9 +171,7 @@ export default function Home() {
       </div>
       {showPortfolio && (
         <Portfolio
-          onClose={() => {
-            setShowPortfolio(false);
-          }}
+          onClose={closePortfolio}
         />
       )}
     </div>

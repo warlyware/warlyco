@@ -1,17 +1,21 @@
+'use client';
+
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { XCircleIcon } from "@heroicons/react/24/outline";
 import ProjectCard from "./project-card";
 import web3Projects from "../data/web3-projects.json";
 import web2Projects from "../data/web2-projects.json";
+import { useRouter } from "next/navigation";
 
-export default function Portfolio({ onClose }) {
+export default function Portfolio() {
+  const router = useRouter();
   const [isClosing, setIsClosing] = useState(false);
 
   const handleClose = () => {
     setIsClosing(true);
     setTimeout(() => {
-      onClose();
+      router.push('/');
     }, 500);
   };
 
