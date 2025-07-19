@@ -33,6 +33,31 @@ module.exports = {
         "8xl": "10rem",
         "9xl": "18rem",
       },
+      keyframes: {
+        'slide-up-fast': {
+          '0%': { transform: 'translateY(100%)' },
+          '100%': { transform: 'translateY(0)' },
+        },
+        'slide-down-fast': {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(100%)' },
+        },
+        'slideUp': {
+          '0%': { transform: 'translateY(100vh)' },
+          '100%': { transform: 'translateY(0)' },
+        }
+      },
+      animation: {
+        'slide-up-fast': 'slide-up-fast 0.5s ease-in-out',
+        'slide-down-fast': 'slide-down-fast 0.5s ease-in-out',
+        'slide-up': 'slideUp 1.5s ease-out forwards',
+      },
+      writingMode: {
+        'vertical-rl': 'vertical-rl',
+      },
+      textOrientation: {
+        'mixed': 'mixed',
+      }
     },
   },
   plugins: [],

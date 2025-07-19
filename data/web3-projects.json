@@ -1,0 +1,208 @@
+[
+  {
+    "title": "Aurora Vertex",
+    "description": "Private Solana trading bot suite: copy trading, modular UI, and (in progress) sentiment-driven trade automation.",
+    "techs": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Node.js",
+      "BullMQ",
+      "Raydium",
+      "Metaplex",
+      "Redis",
+      "Solana web3.js",
+      "Hasura",
+      "Postgres",
+      "GraphQL"
+    ],
+    "repoLinks": {
+      "client": "https://github.com/warlyware/aurora-vertex",
+      "server": "https://github.com/warlyware/aurora-vertex-ws-server"
+    },
+    "buildInfo": "Solo Build"
+  },
+  {
+    "title": "Arc Airdrop Tool",
+    "description": "NFT airdrop platform used by Portals to mint and distribute 800k+ loot box NFTs.",
+    "techs": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Metaplex",
+      "Anchor",
+      "Solana web3.js",
+      "Hasura",
+      "Postgres",
+      "GraphQL"
+    ],
+    "repoLinks": {
+      "repo": "https://github.com/the-architects-io/arc-airdrop"
+    },
+    "buildInfo": "Solo Build"
+  },
+  {
+    "title": "Architects API",
+    "description": "Backend powering Arc Airdrop Tool, DAO site, Blueprint library, and Discord bot.",
+    "techs": [
+      "Node.js",
+      "TypeScript",
+      "Fastify",
+      "Express",
+      "BullMQ",
+      "Redis",
+      "Metaplex",
+      "Anchor",
+      "Solana web3.js",
+      "Hasura",
+      "Postgres",
+      "GraphQL"
+    ],
+    "repoLinks": {
+      "repo": "https://github.com/the-architects-io/architects-api"
+    },
+    "buildInfo": "Solo Build"
+  },
+  {
+    "title": "Architects DAO Site",
+    "description": "Official landing site for the Architects DAO, with wallet onboarding and governance features.",
+    "techs": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Solana web3.js"
+    ],
+    "repoLinks": {
+      "repo": "https://github.com/the-architects-io/the-architects-site"
+    },
+    "buildInfo": "Solo Build"
+  },
+  {
+    "title": "Architects Discord Bot",
+    "description": "Custom Discord bot for DAO analytics, performance monitoring, and live info updates.",
+    "techs": [
+      "Node.js",
+      "TypeScript",
+      "Discord.js",
+      "Fastify"
+    ],
+    "repoLinks": {
+      "repo": "https://github.com/the-architects-io/architects-bot"
+    },
+    "buildInfo": "Solo Build"
+  },
+  {
+    "title": "Narentines Staking",
+    "description": "Non-custodial staking dApp for Narentines DAO using freeze authority.",
+    "techs": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Redux",
+      "Material UI",
+      "Solana web3.js",
+      "Metaplex",
+      "Hasura",
+      "Postgres",
+      "GraphQL"
+    ],
+    "repoLinks": {
+      "repo": "https://github.com/warlyco/narentines-staking"
+    },
+    "buildInfo": "Solo Build"
+  },
+  {
+    "title": "Narentines Raffle",
+    "description": "Raffle site for Narentines DAO: NFT/SPL token raffles with admin dashboard.",
+    "techs": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Redux",
+      "Material UI",
+      "Solana web3.js",
+      "Metaplex",
+      "Hasura",
+      "Postgres",
+      "GraphQL"
+    ],
+    "repoLinks": {
+      "repo": "https://github.com/warlyco/narentines-raffle"
+    },
+    "buildInfo": "Solo Build"
+  },
+  {
+    "title": "SoDead Hunting",
+    "description": "Gamified staking/raffle app: quest-based staking, trait missions, NFT/SPL raffles, admin dashboard.",
+    "techs": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Ant Design",
+      "MUI",
+      "Solana web3.js",
+      "Metaplex"
+    ],
+    "repoLinks": {
+      "repo": "https://github.com/warlyco/sodead-hunting"
+    },
+    "buildInfo": "Solo Build"
+  },
+  {
+    "title": "SolPyre",
+    "description": "dApp to burn NFTs from participating collections and distribute SPL token payouts.",
+    "techs": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "MUI",
+      "Solana web3.js",
+      "Anchor",
+      "Metaplex"
+    ],
+    "repoLinks": {
+      "repo": "https://github.com/warlyco/sol-pyre"
+    },
+    "buildInfo": "Solo Build"
+  },
+  {
+    "title": "Dagger Watch",
+    "description": "Headless Node.js service to monitor Dagger node uptime and automate server updates.",
+    "techs": [
+      "Node.js",
+      "TypeScript",
+      "Fastify"
+    ],
+    "repoLinks": {
+      "repo": "https://github.com/warlyco/dagger-watch"
+    },
+    "buildInfo": "Solo Build"
+  },
+  {
+    "title": "Cardinal",
+    "description": "Contract frontend engineer for major Solana staking dashboard used by top NFT projects.",
+    "techs": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Anchor",
+      "Solana web3.js"
+    ],
+    "repoLinks": {
+      "repo": "https://github.com/solana-nft-programs/staking-ui"
+    },
+    "buildInfo": "Contract"
+  },
+  {
+    "title": "DesoMessenger",
+    "description": "Contract frontend dev for blockchain-based messaging app (2022).",
+    "techs": [
+      "React",
+      "TypeScript"
+    ],
+    "repoLinks": {
+      "repo": ""
+    },
+    "buildInfo": "Contract"
+  }
+]

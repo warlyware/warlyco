@@ -1,7 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useState } from "react";
+import Portfolio from "../components/portfolio";
 
 export default function Home() {
+  const [showPortfolio, setShowPortfolio] = useState(false);
+
   return (
     <div className="flex justify-center items-end bg-cyan-200 max-h-screen min-h-screen relative text-purple-700 overflow-hidden">
       <Head>
@@ -34,6 +38,7 @@ export default function Home() {
         width={800}
         height={800}
         className="animate-slide-up"
+        style={{ animationDelay: '0.3s' }}
       />
       <div className="absolute h-screen w-screen top-0 bottom-0 right-0 left-0 overflow-hidden">
         <div className="text-6xl md:text-8xl lg:text-9xl flex w-full justify-center h-1/3">
@@ -65,18 +70,6 @@ export default function Home() {
             <div className="absolute">Y</div>
           </div>
         </div>
-        {/* <div className="text-7xl md:text-9xl flex w-full justify-between h-1/3 -mt-2">
-          <div className="relative w-1/3 flex justify-center items-center">
-            <div className="absolute -mt-3 -ml-4 text-yellow-500">C</div>
-            <div className="absolute mt-3 ml-4 text-pink-400">C</div>
-            <div className="absolute">C</div>
-          </div>
-          <div className="relative w-1/3 flex justify-center items-center">
-            <div className="absolute -mt-3 -ml-4 text-yellow-500">O</div>
-            <div className="absolute mt-3 ml-4 text-pink-400">O</div>
-            <div className="absolute">O</div>
-          </div>
-        </div> */}
       </div>
       <div className="absolute -top-[5px] left-[1px] z-10 animate-pulse rotate-180">
         <Image
@@ -118,12 +111,12 @@ export default function Home() {
       <div
         className="absolute flex flex-col justify-center left-0 h-screen border border-purple-700 hover:bg-gradient-to-b hover:from-pink-500 hover:to-yellow-500"
       >
-        <div className="text-4xl font-bold uppercase opacity-85 tracking-widest left-is-bottom-text leading-8 px-1 w-[40px]" />
+        <div className="text-4xl font-bold uppercase opacity-85 tracking-widest writing-mode-vertical-rl text-orientation-mixed leading-8 px-1 w-[40px]" />
       </div>
       <div
         className="absolute flex flex-col justify-center right-0 h-screen border border-purple-700 hover:bg-gradient-to-t hover:from-orange-500 hover:to-cyan-500"
       >
-        <div className="text-4xl font-bold uppercase opacity-85 tracking-widest right-is-bottom-text leading-8 rotate-180 px-1 w-[40px]" />
+        <div className="text-4xl font-bold uppercase opacity-85 tracking-widest writing-mode-vertical-rl text-orientation-mixed leading-8 rotate-180 px-1 w-[40px]" />
       </div>
       <div className="absolute flex flex-col justify-center bottom-0 w-full text-center border border-purple-700 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-pink-500 h-[40px]">
         <div className="text-sm md:text-3xl font-bold uppercase opacity-85 tracking-widest leading-8 py-1 h-[40px] space-x-4 md:space-x-16">
@@ -143,6 +136,14 @@ export default function Home() {
           >
             resume
           </a>
+          <button
+            className="hover:underline uppercase"
+            onClick={() => {
+              setShowPortfolio(true);
+            }}
+          >
+            portfolio
+          </button>
           <a
             href="https://x.com/warly_sol"
             target="_blank"
@@ -153,55 +154,13 @@ export default function Home() {
           </a>
         </div>
       </div>
-      {/* <div className="title text-yellow-500 absolute top-0 left-4">W</div>
-      <div className="title text-yellow-500 absolute top-0">A</div>
-      <div className="title text-yellow-500 absolute top-0 right-4">R</div>
-      <div className="title text-yellow-500 absolute left-4">L</div>
-      <div className="title text-yellow-500 absolute right-4">Y</div>
-      <div className="title text-yellow-500 absolute bottom-0 left-4">C</div>
-      <div className="title text-yellow-500 absolute bottom-0 right-4">O</div> */}
-      {/* <div className="flex justify-center items-center absolute top-0 bottom-0 left-0 right-0 uppercase text-cyan-600 text-9xl text-center">
-        <div
-          id="title"
-          className="flex flex-col justify-around h-full tracking-widest"
-        >
-          <div>war</div>
-          <div>ly</div>
-          <div>co</div>
-        </div>
-      </div> */}
-      <style>{`
-        html,
-        body {
-          max-height: 100vh;
-          overflow: hidden;
-        }
-        #__next {
-          overflow: hidden;
-        }
-        .left-is-bottom-text {
-          writing-mode: vertical-rl;
-          text-orientation: mixed;
-        }
-        .right-is-bottom-text {
-          writing-mode: vertical-rl;
-          text-orientation: mixed;
-          translate: ;
-        }
-        .animate-slide-up {
-          transform: translateY(100vh);
-          animation: slideUp 1.5s ease-out forwards;
-          animation-delay: 0.3s;
-        }
-        @keyframes slideUp {
-          from {
-            transform: translateY(100vh);
-          }
-          to {
-            transform: translateY(0);
-          }
-        }
-      `}</style>
+      {showPortfolio && (
+        <Portfolio
+          onClose={() => {
+            setShowPortfolio(false);
+          }}
+        />
+      )}
     </div>
   );
 }

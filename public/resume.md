@@ -6,6 +6,7 @@ Senior full stack engineer (10+ years total, 3+ in web3), specializing in Solana
 
 ## Web3 Experience  
 _All projects below are solo, end-to-end builds unless noted._
+
 **Aurora Vertex** ([client](https://github.com/warlyware/aurora-vertex) | [server](https://github.com/warlyware/aurora-vertex-ws-server))
 Private end-to-end Solana memecoin trading bot suite: copy trading (Jupiter), modular bot management UI, and (in progress) sentiment-driven trade automation from TG feeds.
 **Techs:** Next.js, React, TypeScript, Node.js, BullMQ, Raydium, Metaplex, Redis, Solana web3.js, Hasura, Postgres, GraphQL

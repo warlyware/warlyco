@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Where's Weed",
+    "description": "Senior frontend developer & team manager for a major cannabis dispensary locator web app. Led frontend team, adopted best practices, and improved user experience.",
+    "links": [
+      "https://wheresweed.com"
+    ],
+    "years": "2020–2022"
+  },
+  {
+    "title": "Herbfluence",
+    "description": "CTO and lead architect for a social media influencer marketing platform. Built the full stack from scratch, hired and led the engineering team.",
+    "links": [
+      "https://herbfluence.com"
+    ],
+    "years": "2019–2020"
+  },
+  {
+    "title": "Peapod",
+    "description": "Senior frontend developer (contract) for a leading grocery delivery service, building features and optimizing the customer web app.",
+    "links": [
+      "https://www.peapod.com"
+    ],
+    "years": "2020"
+  },
+  {
+    "title": "Marathon Consulting",
+    "description": "Senior web technology consultant for enterprise modernization projects, including legacy system rebuilds for Caterpillar Marine.",
+    "links": [
+      "https://marathonus.com"
+    ],
+    "years": "2019"
+  },
+  {
+    "title": "For Rent & Apartments.com",
+    "description": "Software developer on apartment listing platforms. Architected and led development of business dashboards and SSR web apps used by millions.",
+    "links": [
+      "https://www.costar.com"
+    ],
+    "years": "2015–2018"
+  }
+]
