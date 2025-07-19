@@ -1,42 +1,41 @@
 [
   {
     "title": "Where's Weed",
-    "description": "Senior frontend developer & team manager for a major cannabis dispensary locator web app. Led frontend team, adopted best practices, and improved user experience.",
-    "links": [
-      "https://wheresweed.com"
-    ],
+    "description": "Senior frontend developer and team manager for a cannabis dispensary locator platform. Led the frontend team through a major codebase transition, introduced modern best practices, and helped scale the app’s UX. Managed frontend delivery for new features and contributed to high-traffic reliability.",
+    "links": {
+      "wheresweed.com": "https://wheresweed.com"
+    },
     "years": "2020–2022"
   },
   {
     "title": "Herbfluence",
-    "description": "CTO and lead architect for a social media influencer marketing platform. Built the full stack from scratch, hired and led the engineering team.",
-    "links": [
-      "https://herbfluence.com"
-    ],
+    "description": "CTO and lead architect for a social media influencer marketing platform. Designed and built the full stack from scratch, managed all technical hires, and led a team to deliver an automated influencer campaign SaaS product. Responsible for DevOps, cloud deployments, and third-party integrations.",
     "years": "2019–2020"
   },
   {
     "title": "Peapod",
-    "description": "Senior frontend developer (contract) for a leading grocery delivery service, building features and optimizing the customer web app.",
-    "links": [
-      "https://www.peapod.com"
-    ],
+    "description": "Senior frontend developer (contract) for Peapod’s grocery delivery web app. Built out customer-facing features and helped modernize the UX for a large, established user base. Worked remotely as part of a distributed team.",
+    "links": {
+      "peapod.com": "https://www.peapod.com"
+    },
     "years": "2020"
   },
   {
     "title": "Marathon Consulting",
-    "description": "Senior web technology consultant for enterprise modernization projects, including legacy system rebuilds for Caterpillar Marine.",
-    "links": [
-      "https://marathonus.com"
-    ],
+    "description": "Senior web technology consultant focused on rebuilding legacy enterprise systems, including a major platform for Caterpillar Marine. Quickly adapted to unfamiliar tech stacks and delivered high-quality frontend architecture for business-critical use cases.",
+    "links": {
+      "marathonus.com": "https://marathonus.com"
+    },
     "years": "2019"
   },
   {
-    "title": "For Rent & Apartments.com",
-    "description": "Software developer on apartment listing platforms. Architected and led development of business dashboards and SSR web apps used by millions.",
-    "links": [
-      "https://www.costar.com"
-    ],
+    "title": "For Rent / Apartments.com",
+    "description": "Software developer for apartment listing platforms used by millions. Architected and led the development of enterprise dashboards and server-side rendered web apps. Delivered new features for business and consumer audiences on large-scale, high-traffic sites.",
+    "links": {
+      "apartments.com": "https://www.apartments.com",
+      "forrent.com": "https://www.forrent.com",
+      "costar.com": "https://www.costar.com"
+    },
     "years": "2015–2018"
   }
 ]

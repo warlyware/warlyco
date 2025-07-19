@@ -1,173 +1,211 @@
 [
   {
     "title": "Aurora Vertex",
-    "description": "Private Solana trading bot suite: copy trading, modular UI, and (in progress) sentiment-driven trade automation.",
+    "description": "A private end-to-end Solana memecoin trading bot suite. Features copy trading on Jupiter, modular bot management UI, and an in-progress sentiment-based trade automation system integrated with Telegram feeds. Built to allow flexible, real-time bot configuration and execution of copy trading strategies. Infrastructure includes a robust backend for trade orchestration and message processing.",
     "techs": [
       "Next.js",
       "React",
       "TypeScript",
       "Node.js",
       "BullMQ",
-      "Raydium",
+      "Raydium SDK",
       "Metaplex",
-      "Redis",
-      "Solana web3.js",
+      "Anchor",
+      "Apollo Client",
+      "Websockets",
+      "Nhost",
       "Hasura",
       "Postgres",
-      "GraphQL"
+      "Redis"
     ],
     "repoLinks": {
-      "client": "https://github.com/warlyware/aurora-vertex",
-      "server": "https://github.com/warlyware/aurora-vertex-ws-server"
+      "client repo": "https://github.com/warlyware/aurora-vertex",
+      "server repo": "https://github.com/warlyware/aurora-vertex-ws-server"
     },
-    "buildInfo": "Solo Build"
+    "buildInfo": "Solo Build",
+    "years": "2024-2025"
   },
   {
     "title": "Arc Airdrop Tool",
-    "description": "NFT airdrop platform used by Portals to mint and distribute 800k+ loot box NFTs.",
+    "description": "A refined NFT airdrop platform, used in conjunction with Portals to mint and deliver more than 800,000 NFT-based loot boxes to holders of top Solana collections. The tool allows bulk airdropping via JSON upload or on-chain collection data. Designed with a user-friendly UI for secure, large-scale airdrops and integrated with on-chain validation systems.",
     "techs": [
       "Next.js",
       "React",
       "TypeScript",
       "Metaplex",
       "Anchor",
-      "Solana web3.js",
+      "Apollo Client",
+      "Nhost",
       "Hasura",
       "Postgres",
-      "GraphQL"
+      "GraphQL",
+      "Solana web3.js"
     ],
     "repoLinks": {
       "repo": "https://github.com/the-architects-io/arc-airdrop"
     },
-    "buildInfo": "Solo Build"
+    "buildInfo": "Solo Build",
+    "years": "2024"
   },
   {
     "title": "Architects API",
-    "description": "Backend powering Arc Airdrop Tool, DAO site, Blueprint library, and Discord bot.",
+    "description": "Node.js and TypeScript backend service powering the Arc Airdrop Tool, Architects DAO site, Blueprint library, and Discord bot. Responsible for NFT metadata aggregation, batch airdrop orchestration, and Solana account compression for over 800,000 NFTs. Provides scalable endpoints for developer and admin tooling across the Architects ecosystem.",
     "techs": [
       "Node.js",
       "TypeScript",
       "Fastify",
-      "Express",
       "BullMQ",
       "Redis",
       "Metaplex",
       "Anchor",
-      "Solana web3.js",
       "Hasura",
       "Postgres",
-      "GraphQL"
+      "GraphQL",
+      "Solana web3.js",
+      "Shadow Drive"
     ],
     "repoLinks": {
       "repo": "https://github.com/the-architects-io/architects-api"
     },
-    "buildInfo": "Solo Build"
+    "buildInfo": "Solo Build",
+    "years": "2022-2024"
   },
   {
-    "title": "Architects DAO Site",
-    "description": "Official landing site for the Architects DAO, with wallet onboarding and governance features.",
+    "title": "Cardinal Staking Dashboard",
+    "description": "Contract frontend engineer for Cardinal’s Solana NFT staking dashboard. Built advanced staking, rewards, and analytics UI components, supporting some of the largest Solana NFT projects. Collaborated with Cardinal's core team to expand and maintain their core product.",
+    "techs": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Anchor",
+      "Solana web3.js",
+      "Apollo Client",
+      "Sentry",
+      "Tailwind CSS"
+    ],
+    "repoLinks": {
+      "repo": "https://github.com/solana-nft-programs/staking-ui"
+    },
+    "buildInfo": "Team Build (Contract)",
+    "years": "2023"
+  },
+  {
+    "title": "SoDead Hunting",
+    "description": "A gamified staking and raffle app developed for the SoDead DAO. Combines quest-style staking, trait-based missions, flexible payout mechanics, and NFT/SPL raffles, all managed from an integrated admin dashboard. Focuses on community engagement and interactive, on-chain events.",
     "techs": [
       "Next.js",
       "React",
       "TypeScript",
-      "Solana web3.js"
+      "Apollo Client",
+      "Metaplex",
+      "Solana web3.js",
+      "Tailwind CSS"
+    ],
+    "repoLinks": {
+      "repo": "https://github.com/warlyco/sodead-hunting"
+    },
+    "buildInfo": "Solo Build",
+    "years": "2022"
+  },
+  {
+    "title": "Architects DAO Site",
+    "description": "Official landing site for the Architects DAO, with wallet onboarding, ecosystem governance, and analytics dashboards. Integrates wallet connections and on-chain DAO governance for a seamless user experience. Provides a central portal for DAO participants and features event and proposal listings.",
+    "techs": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Apollo Client",
+      "Nhost",
+      "Solana web3.js",
+      "Solana Wallet Adapter",
+      "Tailwind CSS"
     ],
     "repoLinks": {
       "repo": "https://github.com/the-architects-io/the-architects-site"
     },
-    "buildInfo": "Solo Build"
+    "buildInfo": "Solo Build",
+    "years": "2022-2024"
   },
   {
     "title": "Architects Discord Bot",
-    "description": "Custom Discord bot for DAO analytics, performance monitoring, and live info updates.",
+    "description": "A custom Discord bot designed for the Architects DAO, monitoring performance, posting real-time analytics, and providing automated info updates for members. Enables streamlined management of DAO communications and automated status checks via Discord commands.",
     "techs": [
       "Node.js",
       "TypeScript",
       "Discord.js",
+      "Websockets",
       "Fastify"
     ],
     "repoLinks": {
       "repo": "https://github.com/the-architects-io/architects-bot"
     },
-    "buildInfo": "Solo Build"
+    "buildInfo": "Solo Build",
+    "years": "2023"
   },
   {
     "title": "Narentines Staking",
-    "description": "Non-custodial staking dApp for Narentines DAO using freeze authority.",
+    "description": "A custom, non-custodial staking platform built for Narentines DAO, leveraging freeze authority to satisfy DAO requirements. Features a full-featured admin panel for monitoring staking activity and user-friendly interfaces for participants. Emphasizes security and non-custodial management of assets.",
     "techs": [
       "Next.js",
       "React",
       "TypeScript",
       "Redux",
-      "Material UI",
-      "Solana web3.js",
+      "Apollo Client",
       "Metaplex",
+      "Solana web3.js",
+      "Solana Wallet Adapter",
       "Hasura",
-      "Postgres",
-      "GraphQL"
+      "Postgres"
     ],
     "repoLinks": {
       "repo": "https://github.com/warlyco/narentines-staking"
     },
-    "buildInfo": "Solo Build"
+    "buildInfo": "Solo Build",
+    "years": "2022"
   },
   {
     "title": "Narentines Raffle",
-    "description": "Raffle site for Narentines DAO: NFT/SPL token raffles with admin dashboard.",
+    "description": "A custom-built raffle platform for Narentines DAO, allowing NFT and SPL token raffles for community members who purchase tickets using the DAO’s SPL token. Includes an admin panel for DAO operators to create, monitor, and manage raffles, and real-time analytics for event tracking.",
     "techs": [
       "Next.js",
       "React",
       "TypeScript",
       "Redux",
-      "Material UI",
-      "Solana web3.js",
+      "Apollo Client",
       "Metaplex",
+      "Solana web3.js",
+      "Solana Wallet Adapter",
       "Hasura",
-      "Postgres",
-      "GraphQL"
+      "Postgres"
     ],
     "repoLinks": {
       "repo": "https://github.com/warlyco/narentines-raffle"
     },
-    "buildInfo": "Solo Build"
-  },
-  {
-    "title": "SoDead Hunting",
-    "description": "Gamified staking/raffle app: quest-based staking, trait missions, NFT/SPL raffles, admin dashboard.",
-    "techs": [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Ant Design",
-      "MUI",
-      "Solana web3.js",
-      "Metaplex"
-    ],
-    "repoLinks": {
-      "repo": "https://github.com/warlyco/sodead-hunting"
-    },
-    "buildInfo": "Solo Build"
+    "buildInfo": "Solo Build",
+    "years": "2022"
   },
   {
     "title": "SolPyre",
-    "description": "dApp to burn NFTs from participating collections and distribute SPL token payouts.",
+    "description": "A unique dApp enabling the burning of NFTs from participating collections, with SPL token payouts for users. Provided a transparent and secure way to reduce NFT supply and reward holders via token incentives. Focused on experimental tokenomics and community-driven burning events.",
     "techs": [
       "Next.js",
       "React",
       "TypeScript",
-      "MUI",
+      "Apollo Client",
+      "Metaplex",
       "Solana web3.js",
-      "Anchor",
-      "Metaplex"
+      "Solana Wallet Adapter",
+      "Tailwind CSS"
     ],
     "repoLinks": {
       "repo": "https://github.com/warlyco/sol-pyre"
     },
-    "buildInfo": "Solo Build"
+    "buildInfo": "Solo Build",
+    "years": "2022"
   },
   {
     "title": "Dagger Watch",
-    "description": "Headless Node.js service to monitor Dagger node uptime and automate server updates.",
+    "description": "A lightweight, headless Node.js service for monitoring Dagger node uptime and automating updates. Used to integrate live server status with Discord notifications, enabling reliable infrastructure operations for dependent dApps and services.",
     "techs": [
       "Node.js",
       "TypeScript",
@@ -176,33 +214,18 @@
     "repoLinks": {
       "repo": "https://github.com/warlyco/dagger-watch"
     },
-    "buildInfo": "Solo Build"
-  },
-  {
-    "title": "Cardinal",
-    "description": "Contract frontend engineer for major Solana staking dashboard used by top NFT projects.",
-    "techs": [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Anchor",
-      "Solana web3.js"
-    ],
-    "repoLinks": {
-      "repo": "https://github.com/solana-nft-programs/staking-ui"
-    },
-    "buildInfo": "Contract"
+    "buildInfo": "Solo Build",
+    "years": "2023"
   },
   {
     "title": "DesoMessenger",
-    "description": "Contract frontend dev for blockchain-based messaging app (2022).",
+    "description": "Senior contract frontend developer for a blockchain messaging app, building new features and optimizing user workflows. Collaborated with a small startup team to deliver a production-ready UI tailored for encrypted, decentralized communications.",
     "techs": [
       "React",
-      "TypeScript"
+      "TypeScript",
+      "Tailwind CSS"
     ],
-    "repoLinks": {
-      "repo": ""
-    },
-    "buildInfo": "Contract"
+    "buildInfo": "Team Build (Contract)",
+    "years": "2022"
   }
 ]
