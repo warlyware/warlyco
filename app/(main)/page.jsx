@@ -142,7 +142,7 @@ export default function Home() {
         <div className="text-4xl font-bold uppercase opacity-85 tracking-widest writing-mode-vertical-rl text-orientation-mixed leading-8 rotate-180 px-1 w-[40px]" />
       </div>
       <div className="absolute flex flex-col justify-center bottom-0 w-full text-center border border-purple-700 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-pink-500 h-[40px]">
-        <div className="text-sm md:text-3xl font-bold uppercase opacity-85 tracking-widest leading-8 py-1 h-[40px] space-x-4 md:space-x-16">
+        <div className="text-base md:text-2xl lg:text-3xl font-bold uppercase opacity-85 tracking-widest leading-8 py-1 h-[40px] space-x-4 md:space-x-8 lg:space-x-16">
           <a
             href="https://github.com/warlyware"
             target="_blank"
