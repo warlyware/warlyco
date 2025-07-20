@@ -46,11 +46,21 @@ module.exports = {
           '0%': { opacity: '0', transform: 'translateY(100%)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        'fade-out': {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
       },
       animation: {
         'slide-up-fast': 'slide-up-fast 0.5s ease-in-out',
         'slide-down-fast': 'slide-down-fast 0.5s ease-in-out',
         'slide-up': 'slide-up 1.5s ease-out forwards',
+        'fade-in': 'fade-in 0.5s ease-in-out',
+        'fade-out': 'fade-out 0.5s ease-in-out',
       },
       writingMode: {
         'vertical-rl': 'vertical-rl',

@@ -2,7 +2,11 @@
 
 import React from "react";
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project, setIsVideoOpen, setVideo }) {
+  const openInVideoModal = (video) => {
+    setVideo(video);
+  };
+
   return (
     <div className="bg-cyan-200 rounded-lg shadow-md p-4 border-2 border-pink-400 text-purple-700">
       <div className="flex items-center justify-between mb-1">
@@ -48,6 +52,21 @@ export default function ProjectCard({ project }) {
           </div>
         )}
       </div>
+      {project.videos && (
+        <div className="flex gap-2 mb-2 text-sm">
+          <span className="font-bold">Videos:</span>
+          {project.videos.map((video) => (
+            <button key={video.title}
+              onClick={() => {
+                openInVideoModal(video);
+              }}
+              className="hover:text-pink-500 transition-all duration-300 underline"
+            >
+              {video.title}
+            </button>
+          ))}
+        </div>
+      )}
       <p className="text-sm mb-2">{project.description}</p>
       {project.techs && (
         <>

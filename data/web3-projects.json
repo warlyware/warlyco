@@ -27,13 +27,14 @@
   },
   {
     "title": "Arc Airdrop Tool",
-    "description": "A refined NFT airdrop platform, used in conjunction with Portals to mint and deliver more than 800,000 NFT-based loot boxes to holders of top Solana collections. The tool allows bulk airdropping via JSON upload or on-chain collection data. Designed with a user-friendly UI for secure, large-scale airdrops and integrated with on-chain validation systems.",
+    "description": "A refined NFT airdrop platform, used in conjunction with Portals to mint and deliver more than 800,000 NFT-based loot boxes to holders of top Solana collections. The tool allows bulk airdropping via JSON upload or on-chain collection data. Designed with a user-friendly UI for secure, large-scale airdrops.",
     "techs": [
       "Next.js",
       "React",
       "TypeScript",
       "Metaplex",
       "Anchor",
+      "Shadow Drive",
       "Apollo Client",
       "Nhost",
       "Hasura",
@@ -45,7 +46,13 @@
       "repo": "https://github.com/the-architects-io/arc-airdrop"
     },
     "buildInfo": "Solo Build",
-    "years": "2024"
+    "years": "2024",
+    "videos": [
+      {
+        "title": "1",
+        "url": "/videos/arc-airdrop-tool/simple-mode-wip-2.mov"
+      }
+    ]
   },
   {
     "title": "Architects API",

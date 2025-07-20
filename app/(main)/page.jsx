@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Portfolio from "../../components/portfolio";
 import Link from "next/link";
+import VideoModal from "../../components/video-modal";
 
 const MonkeImage = dynamic(() => import('../../components/monke-image'), {
   ssr: false,
@@ -16,6 +17,7 @@ export default function Home() {
   const pathname = usePathname();
   const router = useRouter();
   const [showPortfolio, setShowPortfolio] = useState(false);
+  const [video, setVideo] = useState(null);
 
   useEffect(() => {
     setShowPortfolio(pathname === '/portfolio');
@@ -167,6 +169,14 @@ export default function Home() {
       {showPortfolio && (
         <Portfolio
           onClose={closePortfolio}
+          setVideo={setVideo}
+        />
+      )}
+      {video && (
+        <VideoModal
+          isOpen={!!video}
+          onClose={() => setVideo(null)}
+          video={video}
         />
       )}
     </div>
