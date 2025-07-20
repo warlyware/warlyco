@@ -16,15 +16,15 @@ NFT airdrop platform—used in conjunction with Portals to mint and deliver 800,
 **Techs:** Next.js, React, TypeScript, Metaplex, Anchor, Solana web3.js, Hasura, Postgres, GraphQL
 
 **Architects API** ([repo](https://github.com/the-architects-io/architects-api))
-Node.js/TypeScript backend for Arc Airdrop Tool, Architects DAO site, Blueprint library, and Discord bot; handles NFT metadata, batch airdrops, account compression for 800k+ NFTs.
-**Techs:** Node.js, TypeScript, Fastify, Express, BullMQ, Redis, Metaplex, Anchor, Solana web3.js, Hasura, Postgres, GraphQL
+Node.js/TypeScript backend for Arc Airdrop Tool, Architects DAO site, and Discord bot. Many admin tools including collection metadata, minting, and Portals metaverse integrations.
+**Techs:** Node.js, TypeScript, Fastify, BullMQ, Redis, Metaplex, Anchor, Solana web3.js, Hasura, Postgres, GraphQL
 
 **SoDead Hunting** ([repo](https://github.com/warlyco/sodead-hunting))
-Gamified staking/raffle platform for SoDead DAO: quest-style staking, trait-based missions, NFT/SPL raffles, flexible payout mechanics, and full admin dashboard.
+Gamified staking/raffle platform for SoDead DAO: quest-style staking, trait-based missions, NFT/SPL lootbox rewards, flexible payout mechanics, and full admin dashboard.
 **Techs:** Next.js, React, TypeScript, Ant Design, MUI, Solana web3.js, Metaplex
 
 **Narentines Staking** ([repo](https://github.com/warlyco/narentines-staking)) **& Raffle** ([repo](https://github.com/warlyco/narentines-raffle))
-Custom staking and raffle dApps for Narentines DAO: non-custodial staking NFT/SPL token raffles, admin panels for management and monitoring.
+Custom staking and raffle dApps for Narentines DAO with non-custodial staking; DAO token powered NFT/SPL raffles, admin panels for management and monitoring.
 **Techs:** Next.js, React, TypeScript, Redux, Material UI, Solana web3.js, Metaplex, Hasura, Postgres, GraphQL
 
 **Cardinal Staking** ([repo](https://github.com/solana-nft-programs/staking-ui)) — _Web3 Frontend Engineer (Contract, 2023)_  
