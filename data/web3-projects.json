@@ -203,15 +203,15 @@
     "videos": [
       {
         "title": "Portals integration with pNFTs",
-        "url": "/videos/architects-dao-site/pnft-payout.mov"
+        "url": "/videos/architects-site/pnft-payout.mov"
       },
       {
         "title": "Portals integration with customized payout",
-        "url": "/videos/architects-dao-site/portals-integration.mov"
+        "url": "/videos/architects-site/portals-integration.mov"
       },
       {
         "title": "Merkle tree creation",
-        "url": "/videos/sodead-hunting/trees.mov"
+        "url": "/videos/architects-site/trees.mov"
       }
     ]
   },

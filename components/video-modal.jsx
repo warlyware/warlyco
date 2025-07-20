@@ -28,7 +28,6 @@ export default function VideoModal({ isOpen, onClose, video }) {
         <video
           src={video.url}
           autoPlay
-          loop
           muted
           controls
           className="w-full h-full object-contain p-4"

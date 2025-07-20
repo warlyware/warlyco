@@ -1,5 +1,6 @@
 'use client';
 
+import { PlayCircleIcon } from "@heroicons/react/24/outline";
 import React from "react";
 
 export default function ProjectCard({ project, setIsVideoOpen, setVideo }) {
@@ -20,7 +21,7 @@ export default function ProjectCard({ project, setIsVideoOpen, setVideo }) {
           {project.buildInfo}
         </p>
         {project.repoLinks && (
-          <div className="flex gap-2 mb-2">
+          <div className="flex gap-2 mb-2 uppercase">
             <>
               {Object.entries(project.repoLinks).map(([key, value]) => (
                 <a href={value}
@@ -53,18 +54,23 @@ export default function ProjectCard({ project, setIsVideoOpen, setVideo }) {
         )}
       </div>
       {project.videos && (
-        <div className="flex gap-2 mb-2 text-sm">
-          <span className="font-bold">Videos:</span>
-          {project.videos.map((video) => (
-            <button key={video.title}
-              onClick={() => {
-                openInVideoModal(video);
-              }}
-              className="hover:text-pink-500 transition-all duration-300 underline"
-            >
-              {video.title}
-            </button>
-          ))}
+        <div className="flex gap-2 mb-2 text-sm items-center">
+          <PlayCircleIcon className="w-8 h-8 shrink-0" />
+          <div className="flex flex-wrap gap-x-2 gap-y-1">
+            {project.videos.map((video, i) => (
+              <>
+                {i > 0 && <span className="text-purple-700 rotate-180 text-xs">±</span>}
+                <button key={video.title}
+                  onClick={() => {
+                    openInVideoModal(video);
+                  }}
+                  className="hover:text-pink-500 transition-all duration-300 underline"
+                >
+                  {video.title}
+                </button>
+              </>
+            ))}
+          </div>
         </div>
       )}
       <p className="text-sm mb-2">{project.description}</p>
