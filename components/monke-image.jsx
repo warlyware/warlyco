@@ -19,6 +19,7 @@ export default function MonkeImage() {
       width={800}
       height={800}
       className={
+        "absolute bottom-0 max-w-full max-h-full" +
         (animate
           ? "opacity-100 translate-y-0 animate-slide-up"
           : "opacity-0 translate-y-full pointer-events-none")

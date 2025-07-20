@@ -24,7 +24,7 @@ export default function Home() {
   const closePortfolio = () => router.push('/');
 
   return (
-    <div className="flex justify-center items-end bg-cyan-200 min-h-full relative text-purple-700 overflow-hidden">
+    <div className="flex justify-center items-end bg-cyan-200 min-h-full max-h-full relative text-purple-700 overflow-hidden">
       <Head>
         <title>warlyco</title>
         <link
@@ -122,44 +122,42 @@ export default function Home() {
           href="https://x.com/warly_sol"
           target="_blank"
           rel="noreferrer"
-          className="text-3xl font-bold uppercase opacity-85 tracking-widest leading-8 rotate-180 py-1 h-[40px] hover:underline"
+          className="text-3xl font-bold uppercase opacity-85 tracking-widest leading-8 rotate-180 py-1 h-[40px] w-full flex items-center justify-center"
         >
           x
         </a>
       </div>
       <div
-        className="absolute flex flex-col justify-center left-0 h-screen border border-purple-700 hover:bg-gradient-to-b hover:from-pink-500 hover:to-yellow-500"
+        className="absolute flex flex-col justify-center left-0 border border-purple-700 hover:bg-gradient-to-b hover:from-pink-500 hover:to-yellow-500 min-h-full"
       >
         <a
           href="https://github.com/warlyware"
           target="_blank"
           rel="noreferrer"
-          className="text-3xl font-bold uppercase opacity-85 tracking-widest writing-mode-vertical-rl text-orientation-mixed leading-8 px-1 w-[40px] hover:underline"
+          className="text-3xl font-bold uppercase opacity-85 tracking-widest writing-mode-vertical-rl text-orientation-mixed leading-8 px-1 w-full min-h-svh flex items-center justify-center"
         >
           github
         </a>
       </div>
       <div
-        className="absolute flex flex-col justify-center right-0 h-screen border border-purple-700 hover:bg-gradient-to-t hover:from-orange-500 hover:to-cyan-500"
+        className="absolute flex flex-col justify-center right-0 border border-purple-700 hover:bg-gradient-to-t hover:from-orange-500 hover:to-cyan-500 min-h-full"
       >
         <a
           href="/resume"
           target="_blank"
           rel="noreferrer"
-          className="text-3xl font-bold uppercase opacity-85 tracking-widest writing-mode-vertical-rl text-orientation-mixed leading-8 px-1 w-[40px] hover:underline rotate-180"
+          className="text-3xl font-bold uppercase opacity-85 tracking-widest writing-mode-vertical-rl text-orientation-mixed leading-8 rotate-180 px-1 w-full min-h-svh flex items-center justify-center"
         >
           resume
         </a>
       </div>
       <div className="absolute flex flex-col justify-center bottom-0 w-full text-center border border-purple-700 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-pink-500 h-[40px]">
-        <div className="text-3xl font-bold uppercase opacity-85 tracking-widest leading-8 py-1 h-[40px] space-x-4 md:space-x-8 lg:space-x-16">
-          <Link
-            className="text-3xl font-bold uppercase opacity-85 tracking-widest leading-8 px-1 w-[40px] hover:underline"
-            href="/portfolio"
-          >
-            portfolio
-          </Link>
-        </div>
+        <Link
+          className="text-3xl font-bold uppercase opacity-85 tracking-widest leading-8 py-1 h-[40px] w-full flex items-center justify-center"
+          href="/portfolio"
+        >
+          portfolio
+        </Link>
       </div>
       {showPortfolio && (
         <Portfolio
