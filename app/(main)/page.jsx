@@ -24,7 +24,7 @@ export default function Home() {
   const closePortfolio = () => router.push('/');
 
   return (
-    <div className="flex justify-center items-end bg-cyan-200 max-h-screen min-h-screen relative text-purple-700 overflow-hidden">
+    <div className="flex justify-center items-end bg-cyan-200 min-h-dvh max-h-dvh relative text-purple-700 overflow-hidden">
       <Head>
         <title>warlyco</title>
         <link
