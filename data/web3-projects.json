@@ -98,7 +98,7 @@
   },
   {
     "title": "Arc Drive",
-    "description": "A custom-built file storage platform for storing binary data on Shadow Drive with a user friendly UI, allowing users to upload, share, and manage files within the DAO's ecosystem. Features a user-friendly UI for secure, decentralized, file storage.",
+    "description": "A custom-built file storage platform for storing binary data on Shadow Drive with a user friendly UI, allowing users to upload, share, and manage files within the DAO's ecosystem. Features a minimalistic, user-friendly UI for secure, decentralized, (and optionally encrypted) file storage.",
     "techs": [
       "Next.js",
       "React",
@@ -140,7 +140,7 @@
   },
   {
     "title": "SoDead Hunting",
-    "description": "A gamified staking and raffle app developed for the SoDead DAO. Combines quest-style staking, trait-based missions, flexible payout mechanics, and NFT/SPL raffles, all managed from an integrated admin dashboard. Focuses on community engagement and interactive, on-chain events.",
+    "description": "A gamified staking and raffle app developed for the SoDead DAO. Combines quest-style staking, trait-based missions, and highly flexible lootbox payout mechanics, all managed from an integrated admin dashboard. Focuses on community engagement and interactive, on-chain events.",
     "techs": [
       "Next.js",
       "React",
@@ -184,7 +184,7 @@
   },
   {
     "title": "Architects DAO Site",
-    "description": "Official landing site for the Architects DAO, with wallet onboarding, ecosystem governance, and analytics dashboards. Integrates wallet connections and on-chain DAO governance for a seamless user experience. Provides a central portal for DAO participants and features event and proposal listings.",
+    "description": "Official site for the Architects DAO, with wallet based auth, and robust admin tools including Portals metaverse integrations, merkle tree creation, and cNFT mints.",
     "techs": [
       "Next.js",
       "React",
@@ -217,7 +217,7 @@
   },
   {
     "title": "Architects Discord Bot",
-    "description": "A custom Discord bot designed for the Architects DAO, monitoring performance, posting real-time analytics, and providing automated info updates for members. Enables streamlined management of DAO communications and automated status checks via Discord commands.",
+    "description": "A custom Discord bot designed for the Architects DAO, monitoring performance, posting real-time analytics, and providing automated info updates for admin. Enables streamlined monitoring and automated status checks via Discord commands.",
     "techs": [
       "Node.js",
       "TypeScript",
@@ -233,7 +233,7 @@
   },
   {
     "title": "Narentines Staking",
-    "description": "A custom, non-custodial staking platform built for Narentines DAO, leveraging freeze authority to satisfy DAO requirements. Features a full-featured admin panel for monitoring staking activity and user-friendly interfaces for participants. Emphasizes security and non-custodial management of assets.",
+    "description": "A custom, non-custodial staking platform built for Narentines DAO, leveraging freeze authority to satisfy DAO requirements. Features a full-featured admin panel for monitoring staking activity and user-friendly UI for participants.",
     "techs": [
       "Next.js",
       "React",
@@ -283,7 +283,7 @@
   },
   {
     "title": "SolPyre",
-    "description": "A unique dApp enabling the burning of NFTs from participating collections, with SPL token payouts for users. Provided a transparent and secure way to reduce NFT supply and reward holders via token incentives. Focused on experimental tokenomics and community-driven burning events.",
+    "description": "A unique dApp enabling the burning of NFTs from participating collections, with SPL token payouts for users. Provided a transparent and secure way to reduce NFT supply and reward holders via token incentives. Created for experimental tokenomics and community-driven burning events.",
     "techs": [
       "Next.js",
       "React",

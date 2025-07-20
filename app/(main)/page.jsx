@@ -145,7 +145,7 @@ export default function Home() {
           href="https://github.com/warlyware"
           target="_blank"
           rel="noreferrer"
-          className="text-3xl font-bold uppercase opacity-85 tracking-widest writing-mode-vertical-rl text-orientation-mixed leading-8 px-1 w-full min-h-svh flex items-center justify-center"
+          className="text-3xl font-bold uppercase opacity-85 tracking-widest writing-mode-vertical-rl text-orientation-mixed leading-8 px-1 w-full min-h-svh flex items-center justify-center flex-1"
         >
           github
         </a>
@@ -157,7 +157,7 @@ export default function Home() {
           href="/resume"
           target="_blank"
           rel="noreferrer"
-          className="text-3xl font-bold uppercase opacity-85 tracking-widest writing-mode-vertical-rl text-orientation-mixed leading-8 rotate-180 px-1 w-full min-h-svh flex items-center justify-center"
+          className="text-3xl font-bold uppercase opacity-85 tracking-widest writing-mode-vertical-rl text-orientation-mixed leading-8 rotate-180 px-1 w-full min-h-svh flex items-center justify-center flex-1"
         >
           resume
         </a>
