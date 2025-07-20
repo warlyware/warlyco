@@ -16,7 +16,8 @@
       "Nhost",
       "Hasura",
       "Postgres",
-      "Redis"
+      "Redis",
+      "Tailwind CSS"
     ],
     "repoLinks": {
       "client repo": "https://github.com/warlyware/aurora-vertex",
@@ -40,7 +41,8 @@
       "Hasura",
       "Postgres",
       "GraphQL",
-      "Solana web3.js"
+      "Solana web3.js",
+      "Tailwind CSS"
     ],
     "repoLinks": {
       "repo": "https://github.com/the-architects-io/arc-airdrop"
@@ -49,14 +51,30 @@
     "years": "2024",
     "videos": [
       {
-        "title": "1",
+        "title": "MVP build",
         "url": "/videos/arc-airdrop-tool/simple-mode-wip-2.mov"
+      },
+      {
+        "title": "cNFT creation",
+        "url": "/videos/arc-airdrop-tool/cnft-creating.mov"
+      },
+      {
+        "title": "Custom Merkle trees",
+        "url": "/videos/arc-airdrop-tool/custom-trees.mov"
+      },
+      {
+        "title": "Taking payments",
+        "url": "/videos/arc-airdrop-tool/payment.mov"
+      },
+      {
+        "title": "Selecting recipients",
+        "url": "/videos/arc-airdrop-tool/recipients.mov"
       }
     ]
   },
   {
     "title": "Architects API",
-    "description": "Node.js and TypeScript backend service powering the Arc Airdrop Tool, Architects DAO site, Blueprint library, and Discord bot. Responsible for NFT metadata aggregation, batch airdrop orchestration, and Solana account compression for over 800,000 NFTs. Provides scalable endpoints for developer and admin tooling across the Architects ecosystem.",
+    "description": "Node.js and TypeScript backend service powering the Arc Airdrop Tool, Architects DAO site, and multiple admin tools including on-chain collection management, Portals metaverse integrations, merkle tree creation, and cNFT mints. Responsible for NFT metadata aggregation, and batch airdrop orchestration for large-scale airdrops. Provides scalable endpoints for developer and admin tooling across the Architects ecosystem.",
     "techs": [
       "Node.js",
       "TypeScript",
@@ -69,13 +87,38 @@
       "Postgres",
       "GraphQL",
       "Solana web3.js",
-      "Shadow Drive"
+      "Shadow Drive",
+      "Tailwind CSS"
     ],
     "repoLinks": {
       "repo": "https://github.com/the-architects-io/architects-api"
     },
     "buildInfo": "Solo Build",
     "years": "2022-2024"
+  },
+  {
+    "title": "Arc Drive",
+    "description": "A custom-built file storage platform for storing binary data on Shadow Drive with a user friendly UI, allowing users to upload, share, and manage files within the DAO's ecosystem. Features a user-friendly UI for secure, decentralized, file storage.",
+    "techs": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Shadow Drive",
+      "Solana Wallet Adapter",
+      "Solana web3.js",
+      "Tailwind CSS"
+    ],
+    "repoLinks": {
+      "repo": "https://github.com/the-architects-io/arc-drive"
+    },
+    "buildInfo": "Solo Build",
+    "years": "2023-2024",
+    "videos": [
+      {
+        "title": "Overview",
+        "url": "/videos/arc-drive/overview.mov"
+      }
+    ]
   },
   {
     "title": "Cardinal Staking Dashboard",
@@ -87,8 +130,7 @@
       "Anchor",
       "Solana web3.js",
       "Apollo Client",
-      "Sentry",
-      "Tailwind CSS"
+      "Sentry"
     ],
     "repoLinks": {
       "repo": "https://github.com/solana-nft-programs/staking-ui"
@@ -112,7 +154,33 @@
       "repo": "https://github.com/warlyco/sodead-hunting"
     },
     "buildInfo": "Solo Build",
-    "years": "2022"
+    "years": "2022",
+    "videos": [
+      {
+        "title": "On hunt",
+        "url": "/videos/sodead-hunting/on-hunt.mov"
+      },
+      {
+        "title": "Discord auth",
+        "url": "/videos/sodead-hunting/discord-auth.mov"
+      },
+      {
+        "title": "Admin - Add item",
+        "url": "/videos/sodead-hunting/add-item.mov"
+      },
+      {
+        "title": "Admin - Add token",
+        "url": "/videos/sodead-hunting/add-token.mov"
+      },
+      {
+        "title": "Admin - Bind item to token",
+        "url": "/videos/sodead-hunting/bind-item-to-token.mov"
+      },
+      {
+        "title": "Admin - Lootbox management",
+        "url": "/videos/sodead-hunting/lootbox-management.mov"
+      }
+    ]
   },
   {
     "title": "Architects DAO Site",
@@ -131,7 +199,21 @@
       "repo": "https://github.com/the-architects-io/the-architects-site"
     },
     "buildInfo": "Solo Build",
-    "years": "2022-2024"
+    "years": "2022-2024",
+    "videos": [
+      {
+        "title": "Portals integration with pNFTs",
+        "url": "/videos/architects-dao-site/pnft-payout.mov"
+      },
+      {
+        "title": "Portals integration with customized payout",
+        "url": "/videos/architects-dao-site/portals-integration.mov"
+      },
+      {
+        "title": "Merkle tree creation",
+        "url": "/videos/sodead-hunting/trees.mov"
+      }
+    ]
   },
   {
     "title": "Architects Discord Bot",
@@ -162,7 +244,8 @@
       "Solana web3.js",
       "Solana Wallet Adapter",
       "Hasura",
-      "Postgres"
+      "Postgres",
+      "Tailwind CSS"
     ],
     "repoLinks": {
       "repo": "https://github.com/warlyco/narentines-staking"
@@ -183,13 +266,20 @@
       "Solana web3.js",
       "Solana Wallet Adapter",
       "Hasura",
-      "Postgres"
+      "Postgres",
+      "Tailwind CSS"
     ],
     "repoLinks": {
       "repo": "https://github.com/warlyco/narentines-raffle"
     },
     "buildInfo": "Solo Build",
-    "years": "2022"
+    "years": "2022",
+    "videos": [
+      {
+        "title": "Buy tickets",
+        "url": "/videos/narentines-raffle/buy-ticket.mov"
+      }
+    ]
   },
   {
     "title": "SolPyre",
@@ -208,7 +298,13 @@
       "repo": "https://github.com/warlyco/sol-pyre"
     },
     "buildInfo": "Solo Build",
-    "years": "2022"
+    "years": "2022",
+    "videos": [
+      {
+        "title": "Overview",
+        "url": "/videos/sol-pyre/overview.mov"
+      }
+    ]
   },
   {
     "title": "Dagger Watch",
