@@ -21,6 +21,15 @@ export default function Home() {
     setShowPortfolio(pathname === '/portfolio');
   }, [pathname]);
 
+  useEffect(() => {
+    if (typeof window !== 'undefined' && localStorage.getItem('portfolioRedirect')) {
+      localStorage.removeItem('portfolioRedirect');
+      setTimeout(() => {
+        router.push('/portfolio');
+      }, 0);
+    }
+  }, []);
+
   const closePortfolio = () => router.push('/');
 
   return (
@@ -128,7 +137,7 @@ export default function Home() {
         </a>
       </div>
       <div
-        className="absolute flex flex-col justify-center left-0 border border-purple-700 hover:bg-gradient-to-b hover:from-pink-500 hover:to-yellow-500 min-h-full"
+        className="absolute flex flex-col justify-center left-0 border border-purple-700 hover:bg-gradient-to-b hover:from-pink-500 hover:to-yellow-500 min-h-full w-[40px]"
       >
         <a
           href="https://github.com/warlyware"
@@ -140,7 +149,7 @@ export default function Home() {
         </a>
       </div>
       <div
-        className="absolute flex flex-col justify-center right-0 border border-purple-700 hover:bg-gradient-to-t hover:from-orange-500 hover:to-cyan-500 min-h-full"
+        className="absolute flex flex-col justify-center right-0 border border-purple-700 hover:bg-gradient-to-t hover:from-orange-500 hover:to-cyan-500 min-h-full w-[40px]"
       >
         <a
           href="/resume"
