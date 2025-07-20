@@ -62,7 +62,7 @@ export default function Home() {
       <MonkeImage />
 
       <div className="absolute h-screen w-screen top-0 bottom-0 right-0 left-0 overflow-hidden">
-        <div className="text-6xl md:text-8xl lg:text-9xl flex w-full justify-center h-1/3 px-8">
+        <div className="text-6xl md:text-8xl lg:text-9xl flex w-full justify-center h-1/5 pt-12 md:pt-0 md:h-1/3 px-8">
           <div className="relative w-1/3 flex justify-center items-center">
             <div className="absolute -mt-3 -ml-4 text-yellow-500">W</div>
             <div className="absolute mt-3 ml-4 text-pink-400">W</div>
@@ -79,7 +79,7 @@ export default function Home() {
             <div className="absolute">R</div>
           </div>
         </div>
-        <div className="text-6xl md:text-8xl lg:text-9xl flex w-full justify-around h-1/3 px-8 md:px-32 -mt-2">
+        <div className="text-6xl md:text-8xl lg:text-9xl flex w-full justify-around h-1/5 md:h-1/3 px-8 md:px-32 -mt-2">
           <div className="relative w-1/2 flex justify-center items-center">
             <div className="absolute -mt-3 -ml-4 text-yellow-500">L</div>
             <div className="absolute mt-3 ml-4 text-pink-400">L</div>
