@@ -26,7 +26,7 @@ export default function Portfolio() {
       `}>
       <button
         onClick={handleClose}
-        className="absolute top-2 right-4 text-gray-100 z-100"
+        className="fixed top-2 right-4 text-gray-100 z-100 bg-black/50 rounded-full"
       >
         <XCircleIcon className="w-10 h-10" />
       </button>
