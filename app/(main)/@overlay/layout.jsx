@@ -6,7 +6,7 @@ export default function OverlayLayout({ children }) {
 
   useEffect(() => {
     if (!children && showing) {
-      setTimeout(() => setShowing(false), 500);
+      setTimeout(() => setShowing(false), 0);
     }
     if (children && !showing) {
       setShowing(true);

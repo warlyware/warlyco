@@ -6,7 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  height: 100dvh;
+  height: 100svh;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -22,4 +22,12 @@ a {
 
 #__next {
   overflow: hidden;
+}
+
+.writing-mode-vertical-rl {
+  writing-mode: vertical-rl;
+}
+
+.text-orientation-mixed {
+  text-orientation: mixed;
 }
