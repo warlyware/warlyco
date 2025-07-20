@@ -53,7 +53,7 @@ export default function Home() {
       <MonkeImage />
 
       <div className="absolute h-screen w-screen top-0 bottom-0 right-0 left-0 overflow-hidden">
-        <div className="text-6xl md:text-8xl lg:text-9xl flex w-full justify-center h-1/3">
+        <div className="text-6xl md:text-8xl lg:text-9xl flex w-full justify-center h-1/3 px-8">
           <div className="relative w-1/3 flex justify-center items-center">
             <div className="absolute -mt-3 -ml-4 text-yellow-500">W</div>
             <div className="absolute mt-3 ml-4 text-pink-400">W</div>
@@ -70,7 +70,7 @@ export default function Home() {
             <div className="absolute">R</div>
           </div>
         </div>
-        <div className="text-6xl md:text-8xl lg:text-9xl flex w-full justify-around h-1/3 px-32 -mt-2">
+        <div className="text-6xl md:text-8xl lg:text-9xl flex w-full justify-around h-1/3 px-8 md:px-32 -mt-2">
           <div className="relative w-1/2 flex justify-center items-center">
             <div className="absolute -mt-3 -ml-4 text-yellow-500">L</div>
             <div className="absolute mt-3 ml-4 text-pink-400">L</div>
@@ -118,50 +118,47 @@ export default function Home() {
       <div
         className="absolute top-0 w-full text-center border border-purple-700 hover:bg-gradient-to-l hover:from-cyan-500 hover:to-pink-500"
       >
-        <div className="text-4xl font-bold uppercase opacity-85 tracking-widest leading-8 rotate-180 py-1 h-[40px]" />
+        <a
+          href="https://x.com/warly_sol"
+          target="_blank"
+          rel="noreferrer"
+          className="text-3xl font-bold uppercase opacity-85 tracking-widest leading-8 rotate-180 py-1 h-[40px] hover:underline"
+        >
+          x
+        </a>
       </div>
       <div
         className="absolute flex flex-col justify-center left-0 h-screen border border-purple-700 hover:bg-gradient-to-b hover:from-pink-500 hover:to-yellow-500"
       >
-        <div className="text-4xl font-bold uppercase opacity-85 tracking-widest writing-mode-vertical-rl text-orientation-mixed leading-8 px-1 w-[40px]" />
+        <a
+          href="https://github.com/warlyware"
+          target="_blank"
+          rel="noreferrer"
+          className="text-3xl font-bold uppercase opacity-85 tracking-widest writing-mode-vertical-rl text-orientation-mixed leading-8 px-1 w-[40px] hover:underline"
+        >
+          github
+        </a>
       </div>
       <div
         className="absolute flex flex-col justify-center right-0 h-screen border border-purple-700 hover:bg-gradient-to-t hover:from-orange-500 hover:to-cyan-500"
       >
-        <div className="text-4xl font-bold uppercase opacity-85 tracking-widest writing-mode-vertical-rl text-orientation-mixed leading-8 rotate-180 px-1 w-[40px]" />
+        <a
+          href="/resume"
+          target="_blank"
+          rel="noreferrer"
+          className="text-3xl font-bold uppercase opacity-85 tracking-widest writing-mode-vertical-rl text-orientation-mixed leading-8 px-1 w-[40px] hover:underline rotate-180"
+        >
+          resume
+        </a>
       </div>
       <div className="absolute flex flex-col justify-center bottom-0 w-full text-center border border-purple-700 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-pink-500 h-[40px]">
-        <div className="text-base md:text-2xl lg:text-3xl font-bold uppercase opacity-85 tracking-widest leading-8 py-1 h-[40px] space-x-4 md:space-x-8 lg:space-x-16">
-          <a
-            href="https://github.com/warlyware"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:underline"
-          >
-            github
-          </a>
-          <a
-            href="/resume"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:underline"
-          >
-            resume
-          </a>
+        <div className="text-3xl font-bold uppercase opacity-85 tracking-widest leading-8 py-1 h-[40px] space-x-4 md:space-x-8 lg:space-x-16">
           <Link
-            className="hover:underline uppercase"
+            className="text-3xl font-bold uppercase opacity-85 tracking-widest leading-8 px-1 w-[40px] hover:underline"
             href="/portfolio"
           >
             portfolio
           </Link>
-          <a
-            href="https://x.com/warly_sol"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:underline"
-          >
-            twitter
-          </a>
         </div>
       </div>
       {showPortfolio && (
